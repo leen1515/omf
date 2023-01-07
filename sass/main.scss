@@ -1,78 +1,15 @@
 @charset 'utf-8';
 
-.omf__head {
-}
-.omf__main {
-}
-.main__accueil {
-}
-.accueil__form {
-}
-.form__localisation {
-}
-.form__titre {
-}
-.form__texte {
-}
-.form__bouton {
-}
-.main__aide {
-}
-.aide__titre {
-}
-.aide__etapes {
-}
-.etapes__choisir {
-}
-.choisir__index {
-}
-.index--border {
-}
-.choisir__icone {
-}
-.choisir__titre {
-}
-.etapes__composer {
-}
-.composer__index {
-}
-.composer__icone {
-}
-.composer__titre {
-}
-.etapes__deguster {
-}
-.deguster__index {
-}
-.deguster__icone {
-}
-.deguster__titre {
-}
-.main__restaurants {
-}
-.restaurants__titre {
-}
-.restaurants__restaurant {
-}
-.restaurant__image {
-}
-.restaurant__titre {
-}
-.restaurant__adresse {
-}
-.restaurant__like {
-}
-.omf__footer {
-}
-.footer__titre {
-}
-.footer__navigation {
-}
-.navigation__ul {
-}
-.navigation__li {
-}
-.li__icone {
-}
-.li__lien {
-}
+@import './variables.scss';
+
+@import './omf.scss';
+
+@import './form.scss';
+
+@import './aide.scss';
+
+@import './restaurants.scss';
+
+@import './footer.scss';
+
+@import './menu.scss';

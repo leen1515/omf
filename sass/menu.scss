@@ -1,0 +1,27 @@
+.menumain {}
+
+.menumain__entete {}
+
+.menumain__image {}
+
+.entete__titre {}
+
+.entete__iconelike {}
+
+.menu {
+    &__titre {}
+
+    &__recette {}
+}
+
+.recette {
+    &__titre {}
+
+    &__description {}
+
+    &__prix {}
+
+    &__validation {}
+}
+
+.main__validation {}
