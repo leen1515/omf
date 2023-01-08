@@ -1,0 +1,32 @@
+.omf__footer {
+    background-color: #353535;
+    color:white;
+    .footer__titre {
+        font-family: $titre;
+        text-align: left;
+        margin: $marginTitre;
+    }
+
+    .footer__navigation {}
+}
+
+.navigation__ul {
+    width:100%;
+    list-style: none;
+    text-align: left;
+}
+
+.navigation__li {
+    display: flex;
+    @include mixinFlex(row, start, no-wrap);
+
+
+    .li__icone {
+        margin:auto 5px auto 0;
+        text-align: left;
+        width:20px;
+    }
+    .li__lien {
+        margin:auto 0 auto 5px;
+    }
+}

@@ -1,0 +1,21 @@
+.omf__head {
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    
+}
+.head__logo{
+    margin:auto;
+    width:50%;
+}
+.logo--taille{
+    margin:auto;
+    width:100%;
+}
+
+.head {
+    &__main {}
+
+    &__retour {}
+}
+.main__accueil {}

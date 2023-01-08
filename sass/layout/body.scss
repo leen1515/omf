@@ -1,0 +1,16 @@
+
+.loader{
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width:100%;
+    max-width:768px;
+    min-width:230px;
+    font-size: 20px;
+    font-family: $texte;
+    text-align:center;
+   
+}

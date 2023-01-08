@@ -1,0 +1,48 @@
+.accueil__form {
+    @include mixinFlex(column, space-around, no-wrap);
+    background-color: $grisclair;
+    margin: auto;
+    width: 100%;
+}
+
+
+
+.input__localisation {
+    &::placeholder {
+        text-align: center;
+    }
+}
+
+.form {
+
+
+    &__input {
+        @include mixinFlex(row, center, no-wrap);
+        background-color: $grisfonce;
+        margin: auto;
+        gap: 10px;
+        width: 100%;
+    }
+
+    &__titre {
+        align-self: center;
+        font-size: 1em;
+        margin:20px 20px;
+
+    }
+
+    &__texte {
+        align-self: center;
+        font-size:0.8em;
+        margin:0 20px 20px 20px;
+    }
+
+    &__bouton {
+        align-self: center;
+        width: auto;
+        padding: 10px 10px;
+        background: linear-gradient(120deg, $secondaire, $primaire);
+        color: white;
+
+    }
+}

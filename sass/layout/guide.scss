@@ -1,0 +1,40 @@
+.main__guide {}
+
+.guide {
+    &__titre {
+            text-align: left;
+            margin: $marginTitre;
+    }
+
+    &__etapes {}
+}
+
+.etapes__carte {
+    background-color: $grisclair;
+    @include mixinFlex(row, start, no-wrap);
+    margin:10px auto;
+    width:90%;
+    font-size: 0.8em;
+    
+
+    .carte__index {
+        align-self: center;
+        color:white;
+        margin: 10px 5% 10px -10px;
+    }
+
+    .carte__icone {
+        margin: 10px 5%;
+    }
+
+    .carte__titre {
+        margin: 10px 5%;
+    }
+}
+
+.index--border {
+    height:20px;
+    background-color: $primaire;
+    padding:5px 10px;
+    border-radius: 50%;
+}

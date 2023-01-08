@@ -1,3 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  max-width: 768px;
+  min-width: 230px;
+  font-size: 20px;
+  font-family: "Roboto";
+  text-align: center;
+}
 
+.omf__head {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.head__logo {
+  margin: auto;
+  width: 50%;
+}
+
+.logo--taille {
+  margin: auto;
+  width: 100%;
+}
+
+.accueil__form {
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: no-wrap;
+  display: flex;
+  background-color: #f7f7f7;
+  margin: auto;
+  width: 100%;
+}
+
+.input__localisation::placeholder {
+  text-align: center;
+}
+
+.form__input {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: no-wrap;
+  display: flex;
+  background-color: #eaeaea;
+  margin: auto;
+  gap: 10px;
+  width: 100%;
+}
+.form__titre {
+  align-self: center;
+  font-size: 1em;
+  margin: 20px 20px;
+}
+.form__texte {
+  align-self: center;
+  font-size: 0.8em;
+  margin: 0 20px 20px 20px;
+}
+.form__bouton {
+  align-self: center;
+  width: auto;
+  padding: 10px 10px;
+  background: linear-gradient(120deg, #FF79DA, #9356DC);
+  color: white;
+}
+
+.guide__titre {
+  text-align: left;
+  margin: 40px 5%;
+}
+.etapes__carte {
+  background-color: #f7f7f7;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: no-wrap;
+  display: flex;
+  margin: 10px auto;
+  width: 90%;
+  font-size: 0.8em;
+}
+.etapes__carte .carte__index {
+  align-self: center;
+  color: white;
+  margin: 10px 5% 10px -10px;
+}
+.etapes__carte .carte__icone {
+  margin: 10px 5%;
+}
+.etapes__carte .carte__titre {
+  margin: 10px 5%;
+}
+
+.index--border {
+  height: 20px;
+  background-color: #9356DC;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.main__restaurants {
+  background-color: #f7f7f7;
+  padding-bottom: 40px;
+}
+
+.restaurants__titre {
+  text-align: left;
+  margin: 40px 5%;
+}
+
+.restaurant__image {
+  width: 100%;
+  height: 200px;
+}
+.restaurant__description {
+  margin: 0 5%;
+  text-align: left;
+  width: 65%;
+}
+.restaurant__like {
+  position: relative;
+  width: 100%;
+  top: -100px;
+  text-align: right;
+  margin: 5%;
+  box-sizing: border-box;
+}
+
+.lien__restaurant {
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: white;
+  margin: 40px 5%;
+}
+
+.image--taille {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image__nouveau {
+  position: relative;
+  top: -200px;
+  text-align: right;
+}
+
+.omf__footer {
+  background-color: #353535;
+  color: white;
+}
+.omf__footer .footer__titre {
+  font-family: "Shrikhand", cursive;
+  text-align: left;
+  margin: 40px 5%;
+}
+.navigation__ul {
+  width: 100%;
+  list-style: none;
+  text-align: left;
+}
+
+.navigation__li {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: no-wrap;
+  display: flex;
+}
+.navigation__li .li__icone {
+  margin: auto 5px auto 0;
+  text-align: left;
+  width: 20px;
+}
+.navigation__li .li__lien {
+  margin: auto 0 auto 5px;
+}
 
 /*# sourceMappingURL=style.css.map */
