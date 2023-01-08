@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*les classes fantomes pour la fonction @extend*/
+.coeurAnimation, .restaurant__like input:checked ~ .fa-color, .restaurant__like input:hover ~ .fa-color {
+  background: -webkit-linear-gradient(90deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -9,6 +17,7 @@ body {
   font-size: 20px;
   font-family: "Roboto";
   text-align: center;
+  box-sizing: border-box;
 }
 
 .omf__head {
@@ -65,7 +74,7 @@ body {
   align-self: center;
   width: auto;
   padding: 10px 10px;
-  background: linear-gradient(120deg, #FF79DA, #9356DC);
+  background: linear-gradient(90deg, #FF79DA, #9356DC);
   color: white;
 }
 
@@ -122,11 +131,13 @@ body {
   width: 65%;
 }
 .restaurant__like {
+  display: inline-block;
   position: relative;
-  width: 100%;
   top: -100px;
   text-align: right;
-  margin: 5%;
+  width: 80%;
+  height: 20%;
+  right: 0;
   box-sizing: border-box;
 }
 
@@ -136,7 +147,8 @@ body {
   flex-wrap: wrap;
   display: flex;
   background-color: white;
-  margin: 40px 5%;
+  margin: 0 0 20px 0;
+  height: auto;
 }
 
 .image--taille {
@@ -149,6 +161,24 @@ body {
   position: relative;
   top: -200px;
   text-align: right;
+}
+
+.nouveau--visibility {
+  visibility: hidden;
+}
+
+.fa-color {
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fa-position {
+  position: absolute;
+}
+
+.restaurant__like input {
+  visibility: hidden;
 }
 
 .omf__footer {

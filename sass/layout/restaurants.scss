@@ -1,6 +1,6 @@
 .main__restaurants {
-    background-color: $grisclair;
-    padding-bottom:40px;
+  background-color: $grisclair;
+  padding-bottom: 40px;
 }
 
 .restaurants__titre {
@@ -21,11 +21,13 @@
   }
 
   &__like {
-    position:relative;
-    width: 100%;
-    top:-100px;
-    text-align:right;
-    margin:5%;
+    display: inline-block;
+    position: relative;
+    top: -100px;
+    text-align: right;
+    width: 80%;
+    height: 20%;
+    right:0;
     box-sizing: border-box;
   }
 }
@@ -39,7 +41,8 @@
 .lien__restaurant {
   @include mixinFlex(row, start, wrap);
   background-color: white;
-  margin: $marginTitre;
+  margin: 0 0 20px 0;
+  height: auto;
 }
 
 .image--taille {
@@ -52,4 +55,29 @@
   position: relative;
   top: -200px;
   text-align: right;
+}
+
+.nouveau--visibility {
+  visibility: hidden;
+}
+
+.fa-color {
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fa-position {
+  position: absolute;
+}
+
+.restaurant__like input{
+    visibility: hidden;
+}
+
+.restaurant__like input:hover ~ .fa-color{
+   @extend .coeurAnimation;
+}
+.restaurant__like input:checked ~ .fa-color{
+   @extend .coeurAnimation;
 }
