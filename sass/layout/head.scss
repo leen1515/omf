@@ -1,0 +1,21 @@
+.omf__tete {
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    
+}
+.tete__logo{
+    margin:auto;
+    width:50%;
+}
+.logo--taille{
+    margin:auto;
+    width:100%;
+}
+
+.omf {
+    &__main {}
+
+    &__retour {}
+}
+.main__accueil {}

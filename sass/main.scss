@@ -1,20 +1,20 @@
 @charset 'utf-8';
 
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
 @import './outils/variables.scss';
 
-@import './outils/mixinfunction.scss';
+@import './outils/mixin-function.scss';
 
 @import './layout/body.scss';
 
-@import './layout/omf.scss';
+@import './layout/head.scss';
 
 @import './layout/form.scss';
 
 @import './layout/guide.scss';
 
 @import './layout/restaurants.scss';
+
+@import './components/cartes.scss';
 
 @import './layout/footer.scss';
 

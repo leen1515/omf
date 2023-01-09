@@ -1,40 +1,59 @@
-.main__guide {}
+.main__guide {
+}
 
 .guide {
-    &__titre {
-            text-align: left;
-            margin: $marginTitre;
-    }
+  &__titre {
+    text-align: left;
+    margin: $marginTitre;
+  }
 
-    &__etapes {}
+  &__etapes {
+  }
 }
 
 .etapes__carte {
-    background-color: $grisclair;
-    @include mixinFlex(row, start, no-wrap);
-    margin:10px auto;
-    width:90%;
-    font-size: 0.8em;
-    
+  background-color: $grisclair;
+  @include mixinFlex(row, start, no-wrap);
+  margin: 15px auto;
+  padding: 8px 0 8px 0;
+  width: 85%;
+  font-size: 0.7em;
+  border-radius:20px;
+  box-shadow: 0px 5px 10px $ombre;
 
-    .carte__index {
-        align-self: center;
-        color:white;
-        margin: 10px 5% 10px -10px;
-    }
+  .carte__index {
+    color: $blanc;
+    margin: auto 5% auto -10px;
+    height: 15px;
+    background-color: $primaire;
+    padding: 5px 10px;
+    border-radius: 50%;
+  }
 
-    .carte__icone {
-        margin: 10px 5%;
-    }
+  .carte__icone {
+    margin: 10px 5%;
+  }
 
-    .carte__titre {
-        margin: 10px 5%;
+  .carte__titre {
+    margin: 10px 5%;
+  }
+ 
+
+
+}
+
+
+
+.etapes__carte--change:hover{
+    @extend .etapes__carte;
+    background-color: adjust-color($primaire, $alpha: -0.8);
+    .carte__icone{
+        color:$primaire;
     }
 }
 
-.index--border {
-    height:20px;
-    background-color: $primaire;
-    padding:5px 10px;
-    border-radius: 50%;
+
+.etapes__carte:hover{
+
+
 }

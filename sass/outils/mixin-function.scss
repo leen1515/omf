@@ -1,0 +1,16 @@
+@mixin mixinFlex($flex-direction, $justify-content, $wrap) {
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  flex-wrap: $wrap;
+  display: flex;
+}
+
+
+/*les classes fantomes pour la fonction @extend*/
+%coeurAnimation{
+    background: -webkit-linear-gradient(90deg, $primaire, $secondaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    opacity: 1;
+
+}
