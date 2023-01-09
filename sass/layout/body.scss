@@ -1,28 +1,29 @@
-
-.charge{
-
+.charge {
 }
 
-html{
-    margin:0;
-    padding:0;
+html {
+  margin: auto;
+  padding: auto;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width:100%;
-    max-width:350px;
-    min-width:230px;
-    font-size: 20px;
-    font-family: $texte;
-    text-align:center;
-    box-sizing: border-box;
-   
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  max-width: 375px;
+  min-width: 230px;
+  font-size: 20px;
+  font-family: $texte;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-h2{
-    font-family: $texte;
-    font-weight: 900;
+h2 {
+  font-family: $texte;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
 }

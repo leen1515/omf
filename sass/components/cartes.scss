@@ -1,8 +1,22 @@
+.restaurants__lien{
+  background-color: white;
+  width:90%;
+  border-radius: 20px;
+  margin:20px auto 40px auto;
+  height:auto;
+  box-sizing:border-box;
+  overflow: hidden;
+  @include mixinOmbreLeger();
 
+  &>a{
+    color:$noir;
+  }
+
+}
 .restaurant {
     &__image {
       width: 100%;
-      height: 200px;
+      height: 170px;
     }
   
     &__description {
@@ -13,10 +27,11 @@
   
     &__aime{
       display: inline-block;
+      font-size:0.7em;
       position: relative;
-      top: -100px;
+      top: -40px;
       text-align: right;
-      width: 80%;
+      width: 60%;
       height: 20%;
       right:0;
       box-sizing: border-box;
@@ -24,15 +39,17 @@
   }
   
   .description__titre {
+    margin:10px 0 5px 0;
+    font-size:0.9em;
   }
   
   .description__adresse {
+    margin:5px 0 0 0;
+    font-size:0.8em;
   }
   
   .lien__restaurant {
     @include mixinFlex(row, start, wrap);
-    background-color: white;
-    margin: 0 0 20px 0;
     height: auto;
   }
   
@@ -43,17 +60,33 @@
   }
   
   .image__nouveau {
+    @include mixinFlex(row, right, no-wrap);
+    font-weight: 600;
+    font-size: 0.7em;
     position: relative;
-    top: -200px;
+    top: -160px;
     text-align: right;
+    width:100%;
+    
+    &>p{
+      width:auto;
+      padding:5px 20px;
+      margin:0 15px;
+      background-color: $tertiaire;
+      color:adjust-color($tertiaire, $green:-100, $red:-100, $blue:-100);
+      border-radius:3px;
+    }
+   
   }
   
-  .nouveau--visibilite {
+  .image__nouveau--visibilite {
     visibility: hidden;
   }
   
   .fa-color {
-    color: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(90deg, $primaire, $secondaire);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
     opacity: 0;
     transition: opacity 1s;
   }
@@ -72,3 +105,4 @@
   .restaurant__aime input:checked ~ .fa-color{
      @extend %coeurAnimation;
   }
+
