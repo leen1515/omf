@@ -1,48 +1,59 @@
 .accueil__form {
-    @include mixinFlex(column, space-around, no-wrap);
-    background-color: $grisclair;
-    margin: auto;
-    width: 100%;
+  @include mixinFlex(column, space-around, no-wrap);
+  background-color: $grisclair;
+  margin: 0 auto;
+  padding:0 0 40px 0;
+  width: 100%;
 }
 
-
-
 .input__localisation {
-    &::placeholder {
-        text-align: center;
-    }
+  border: none;
+  padding: 10px;
+  background-color: $grisfonce;
+  padding-top:15px;
+  &::placeholder {
+    text-align: center;
+    opacity: 1;
+    font-size: larger;
+    color: $noir;
+    font-weight: 700;
+  }
 }
 
 .form {
-
-
-    &__input {
-        @include mixinFlex(row, center, no-wrap);
-        background-color: $grisfonce;
-        margin: auto;
-        gap: 10px;
-        width: 100%;
+  &__input {
+    @include mixinFlex(row, center, no-wrap);
+    background-color: $grisfonce;
+    width: 100%;
+    z-index: 1;
+    & > i {
+      margin: auto 0;
     }
+  }
 
-    &__titre {
-        align-self: center;
-        font-size: 1em;
-        margin:20px 20px;
+  &__titre {
+    align-self: center;
+    font-size: 1em;
+    margin: 40px 20px 20px 20px;
+  }
 
-    }
+  &__texte {
+    align-self: center;
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 0 20px 20px 20px;
+  }
 
-    &__texte {
-        align-self: center;
-        font-size:0.8em;
-        margin:0 20px 20px 20px;
-    }
+  &__bouton {
+    align-self: center;
+    width: auto;
+    padding: 13px 20px;
+    background: linear-gradient(0deg, $primaire, $secondaire,  );
+    @include mixinOmbreLeger;
+    color: $blanc;
+    border-radius: 20px;
+    border:none;
+    font-family: $texte;
 
-    &__bouton {
-        align-self: center;
-        width: auto;
-        padding: 10px 10px;
-        background: linear-gradient(90deg, $secondaire, $primaire);
-        color: $blanc;
-
-    }
+  }
 }

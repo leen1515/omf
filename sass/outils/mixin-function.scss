@@ -5,6 +5,9 @@
   display: flex;
 }
 
+@mixin mixinOmbreLeger(){
+  box-shadow: 0px 5px 10px $ombre;
+}
 
 /*les classes fantomes pour la fonction @extend*/
 %coeurAnimation{
