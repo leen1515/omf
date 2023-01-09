@@ -15,7 +15,7 @@
 
 /*les classes fantomes pour la fonction @extend*/
 %coeurAnimation{
-    background: -webkit-linear-gradient(90deg, $primaire, $secondaire);
+    background: -webkit-linear-gradient(-90deg, $primaire, $secondaire);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
     opacity: 1;

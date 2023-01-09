@@ -1,6 +1,6 @@
 /*les classes fantomes pour la fonction @extend*/
 .restaurant__aime input:checked ~ .fa-color, .restaurant__aime input:hover ~ .fa-color {
-  background: -webkit-linear-gradient(90deg, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(-90deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
@@ -31,6 +31,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 .omf__tete {
@@ -261,7 +262,7 @@ a {
 }
 
 .fa-color {
-  background: -webkit-linear-gradient(90deg, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(-90deg, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
@@ -282,13 +283,17 @@ a {
 }
 .omf__footer .footer__titre {
   font-family: "Shrikhand", cursive;
+  font-size: 1em;
+  font-weight: 400;
   text-align: left;
-  margin: 40px 5%;
+  margin: 20px 0 0 6%;
 }
 .navigation__ul {
   width: 100%;
   list-style: none;
   text-align: left;
+  margin-left: -20px;
+  font-size: 0.6em;
 }
 
 .navigation__li {
@@ -299,12 +304,13 @@ a {
   display: flex;
 }
 .navigation__li .li__icone {
-  margin: auto 5px auto 0;
+  margin: 4px 0 4px 5px;
   text-align: left;
   width: 20px;
 }
 .navigation__li .li__lien {
-  margin: auto 0 auto 5px;
+  text-align: left;
+  margin: 4px 0 auto 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

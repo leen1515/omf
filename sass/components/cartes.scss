@@ -84,7 +84,7 @@
   }
   
   .fa-color {
-    background: -webkit-linear-gradient(90deg, $primaire, $secondaire);
+    background: -webkit-linear-gradient(-90deg, $primaire, $secondaire);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
     opacity: 0;
