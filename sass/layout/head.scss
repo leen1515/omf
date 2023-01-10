@@ -1,27 +1,32 @@
 .omf__tete {
-    @include widthMarginHeight(100%, 2% auto 0 auto, auto);
-    padding:5%;
-    display:flex;
-    justify-content: space-around;
-    box-shadow: 0 2px 2px $ombre;
-    z-index: 4;
-    box-sizing: border-box;
+  @include widthMarginHeight(100%, 2% auto 0 auto, auto);
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 2px 2px $ombre;
+  z-index: 4;
+  box-sizing: border-box;
 }
-.tete__logo{
-    margin:auto;
-    width:50%;
+.tete__logo {
+  margin: auto;
+  width: 50%;
+  max-width: 200px;
+
+
 }
-.logo--taille{
-    margin:auto;
-    width:100%;
+.logo--taille {
+  margin: auto;
+  width: 100%;
 }
 
 .omf {
-    &__main {}
+  &__main {
+  
 
-    &__retour {}
-}
+  &__retour {
+  }
+}}
+
 .main__accueil {
-    @include widthMarginHeight(100%, auto, auto);
-    @include mixinFlex(column, center);
+  width:100%;
 }

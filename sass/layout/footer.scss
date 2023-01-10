@@ -1,36 +1,60 @@
 .omf__footer {
-    background-color: $gristresfonce;
-    color:$blanc;
-    .footer__titre {
-        font-family: $titre;
-        font-size: 1em;
-        font-weight:400;
-        text-align: left;
-        margin: 20px 0 0 $marginLeftTitre;
-    }
+  width: 100%;
+  background-color: $gristresfonce;
+  color: $blanc;
+  bottom: 0;
+  
 
-    .footer__navigation {}
+  .footer__titre {
+    font-family: $titre;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    margin: 20px 0 0 $marginLeftTitre;
+    @include mediaM{
+      text-align: center;
+      margin: 20px 0 0 0;
+    }
+    @include mediaXL{
+      text-align: center;
+      margin: 20px 0 0 0;;
+    }
+  }}
+
+  .footer__navigation {
 }
 
 .navigation__ul {
-    width:100%;
-    list-style: none;
-    text-align: left;
-    font-size:0.6em;
+  width: 100%;
+  list-style: none;
+  text-align: left;
+  font-size: 0.6rem;
+
+  @include mediaM {
+    @include mixinFlex(row, space-around);
+    width: 90%;
+    font-size: 0.8rem;
+  }
+  @include mediaXL {
+    @include mixinFlex(row, space-around);
+    width: 90%;
+    font-size: 0.9rem;
+  }
 }
 
 .navigation__li {
-    display: flex;
-    @include mixinFlex(row, start);
-
-
-    .li__icone {
-        margin:4px 0 4px 5px;
-        text-align: left;
-        width:20px;
-    }
-    .li__lien {
-        text-align: left;
-        margin:4px 0 auto 4px;
-    }
+  display: flex;
+  @include mixinFlex(row, start);
+  margin-left: -40px;
+  padding-left: $marginLeftTitre;
+ 
+  .li__icone {
+    margin: 4px 0 4px 5px;
+    text-align: left;
+    width: 20px;
+  }
+  .li__lien {
+    text-align: left;
+    margin: 4px 0 auto 4px;
+  }
 }

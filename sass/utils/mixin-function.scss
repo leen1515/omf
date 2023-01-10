@@ -1,0 +1,40 @@
+@mixin mixinFlex($flex-direction, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+
+@mixin widthMarginHeight($width, $margin, $height) {
+  width: $width;
+  margin: $margin;
+  height: $height;
+}
+
+/*decoration*/
+@mixin mixinOmbreLeger() {
+  box-shadow: 0px 5px 10px $ombre;
+}
+@mixin mixinOmbreFort() {
+  box-shadow: 0px 10px 10px $ombre;
+}
+
+/*les classes fantomes pour la fonction @extend*/
+%coeurAnimation {
+  background: -webkit-linear-gradient(-90deg, $primaire, $secondaire);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+
+/*mixin pour les requetes media*/
+
+@mixin mediaM {
+  @media (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, xl)) {
+    @content;
+  }
+}
+@mixin mediaXL {
+  @media (min-width: map-get($breakpoints, xl)) {
+    @content;
+  }
+}

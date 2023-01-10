@@ -1,0 +1,29 @@
+.charge {
+}
+
+:root {
+  font-size: 20px;
+  @include mediaM {
+    font-size: 25px;
+  }
+}
+
+body {
+  min-width: 200px;
+  @include widthMarginHeight(100%, auto, auto);
+  @include mixinFlex(column, center);
+  font-family: $texte;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: $texte;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: $blanc;
+}
