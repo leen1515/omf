@@ -1,16 +1,26 @@
+/*principal*/
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
+$tertiaireFonce: adjust-color($tertiaire, $green:-100, $red:-100, $blue:-100);
+
+/*background*/
 $gristresfonce:#353535;
 $grisfonce: #eaeaea;
 $grisclair:#f7f7f7;
 $blanc:#ffffff;
+
+/*general*/
 $noir:#000000;
 $ombre:rgba(0, 0, 0, 0.256);
+
+/*police*/
 
 $titre: "Shrikhand", cursive;
 $texte: "Roboto";
 
-$marginTitre: 40px 5%;
+$marginLeftTitre: 6%;
 
-$opacity: 0;
+
+
+

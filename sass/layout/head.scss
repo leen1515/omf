@@ -1,11 +1,11 @@
 .omf__tete {
-    width:100%;
-    height:60px;
+    @include widthMarginHeight(100%, 2% auto 0 auto, auto);
+    padding:5%;
     display:flex;
     justify-content: space-around;
     box-shadow: 0 2px 2px $ombre;
-    margin-top:10px;
     z-index: 4;
+    box-sizing: border-box;
 }
 .tete__logo{
     margin:auto;
@@ -21,4 +21,7 @@
 
     &__retour {}
 }
-.main__accueil {}
+.main__accueil {
+    @include widthMarginHeight(100%, auto, auto);
+    @include mixinFlex(column, center);
+}

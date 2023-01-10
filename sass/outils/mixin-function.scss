@@ -1,10 +1,17 @@
-@mixin mixinFlex($flex-direction, $justify-content, $wrap) {
+@mixin mixinFlex($flex-direction, $justify-content) {
+  display:flex;
   flex-direction: $flex-direction;
   justify-content: $justify-content;
-  flex-wrap: $wrap;
-  display: flex;
 }
 
+@mixin widthMarginHeight($width, $margin, $height){
+  width:$width;
+  margin:$margin;
+  height:$height;
+}
+
+
+/*decoration*/
 @mixin mixinOmbreLeger(){
   box-shadow: 0px 5px 10px $ombre;
 }

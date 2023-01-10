@@ -5,7 +5,7 @@
 .guide {
   &__titre {
     text-align: left;
-    margin: $marginTitre;
+    margin: 40px 0 20px $marginLeftTitre;
   }
 
   &__etapes {
@@ -14,10 +14,11 @@
 
 .etapes__carte {
   background-color: $grisclair;
-  @include mixinFlex(row, start, no-wrap);
+  @include mixinFlex(row, start);
   margin: 15px auto;
   padding: 8px 0 8px 0;
   width: 85%;
+  max-width: 390px;
   font-size: 0.7em;
   border-radius: 20px;
   @include mixinOmbreLeger;
@@ -32,12 +33,12 @@
   }
 
   .carte__icone {
-    margin: 10px 5%;
+    margin: auto 20px;
     color:adjust-color($gristresfonce, $lightness:30%);
   }
 
   .carte__titre {
-    margin: 10px 5%;
+    margin: 10px 20px;
     color:adjust-color($gristresfonce, $lightness:10%);
   }
 }

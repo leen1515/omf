@@ -1,5 +1,5 @@
 .accueil__form {
-  @include mixinFlex(column, space-around, no-wrap);
+  @include mixinFlex(column, center);
   background-color: $grisclair;
   margin: 0 auto;
   padding:0 0 40px 0;
@@ -22,7 +22,7 @@
 
 .form {
   &__input {
-    @include mixinFlex(row, center, no-wrap);
+    @include mixinFlex(row, center);
     background-color: $grisfonce;
     width: 100%;
     z-index: 1;
