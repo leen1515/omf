@@ -20,107 +20,201 @@
     </head>
 
     <body>
-        <div class="loader"></div>
-        <header class="omf__head">
-            <div class="head__retour"><a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
-            <div class="head__logo">
-                <img src="./images/logo/ohmyfood.png"
+        <div class="charge"></div>
+        <header class="omf__tete">
+            <div class="tete__retour"><a href="./index.html"><i class="fa-solid fa-arrow-left fa-1x"></i></a></div>
+            <div class="tete__logo">
+                <img class="tete__logo--position"
+                    src="./images/logo/ohmyfood.png"
                     alt="logo de oh my food"
                     title="oh my food">
             </div>
         </header>
-        <main class="menumain">
-            <div class="menumain__image"><img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                    alt=""
-                    title=""></div>
-            <header class="menumain__entete">
-                <h1 class="entete__titre">A la française</h1>
-                <div class="entete__iconelike"></div>
-            </header>
 
-            <section class="menu">
-                <h2 class="menu__titre">Entrées</h2>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Tartare de poulpe acidulé</h3>
-                    <p class="recette__description">Aux zestes d'orange</p>
-                    <p class="recette__prix">25€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Velouté de légumes d'antan</h3>
-                    <p class="recette__description">Carotte, panais, topnambour</p>
-                    <p class="recette__prix">35€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Soupe à l'oignon</h3>
-                    <p class="recette__description">revisitée</p>
-                    <p class="recette__prix">20€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="menu">
-                <h2 class="menu__titre">Plats</h2>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Coquilles Saint-Jacques</h3>
-                    <p class="recette__description">Accompagnées d'une purée de panais</p>
-                    <p class="recette__prix">40€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Magret de canard</h3>
-                    <p class="recette__description">Et parmentier de pommes de terre</p>
-                    <p class="recette__prix">35€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Pigeonneau d'Ille-et-Vilaine</h3>
-                    <p class="recette__description">Sur son lit de gnocchis aux légumes</p>
-                    <p class="recette__prix">44€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="menu">
-                <h2 class="menu__titre">Desserts</h2>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Pétales de violettes glacées</h3>
-                    <p class="recette__description">Et purée de noisettes</p>
-                    <p class="recette__prix">18€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Fondant au chocolat</h3>
-                    <p class="recette__description">revisitée</p>
-                    <p class="recette__prix">22€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Millefeuille croustillat</h3>
-                    <p class="recette__description">Myrtilles et pâtes d'amandes</p>
-                    <p class="recette__prix">23€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-            </section>
-            <button class="menumain__validation">Commander</button>
+        <div class="menu__image"><img class="image__taille"
+                src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt=""
+                title=""></div>
+
+        <main class="section__menu">
+
+            <header class="menu__entete">
+                <h1 class="entete__titre">A la française</h1>
+                <label class="restaurant__aime">
+                    <input type="checkbox">
+                    <i class="fa-regular fa-heart fa-2x fa-position">
+                    </i>
+                    <i class="fa-solid fa-heart fa-2x fa-color fa-position"></i>
+                </label>
+            </header>
+            <form>
+                <section class="menu">
+                    <h2 class="menu__titre">Entrées</h2>
+                    <div class="menu__recette">
+                        <div class="recette__titre">
+                            <h3>Tartare de poulpe acidulé</h3>
+
+                            <div class="description__recette-prix">
+                                <p class="recette__description">Aux zestes d'orange</p>
+                                <p class="recette__prix">25€</p>
+                            </div>
+                        </div>
+                        <div class="back--check">
+                            <label class="border--check">
+                                <input class="recette__validation"
+                                    type="checkbox" />
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="menu__recette">
+                        <div class="recette__titre">
+                            <h3>Velouté de légumes d'antan</h3>
+
+                            <div class="description__recette-prix">
+                                <p class="recette__description">Carotte, panais, topnambour</p>
+                                <p class="recette__prix">35€</p>
+                            </div>
+                        </div>
+                        <div class="back--check">
+                            <label class="border--check">
+                                <input class="recette__validation"
+                                    type="checkbox" />
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="menu__recette">
+                        <div class="recette__titre">
+                            <h3>Soupe à l'oignon</h3>
+
+                            <div class="description__recette-prix">
+                                <p class="recette__description">revisitée</p>
+                                <p class="recette__prix">20€</p>
+                            </div>
+                        </div>
+                        <div class="back--check">
+                            <label class="border--check">
+                                <input class="recette__validation"
+                                    type="checkbox" />
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                <section class="menu">
+                    <h2 class="menu__titre">Plats</h2>
+                    <div class="menu__recette">
+                        <div class="recette__titre">
+                            <h3>Coquilles Saint-Jacques </h3>
+
+                            <div class="description__recette-prix">
+                                <p class="recette__description">Accompagnées d'une purée de panais</p>
+                                <p class="recette__prix">40€</p>
+                            </div>
+                        </div>
+                        <div class="back--check">
+                            <label class="border--check">
+                                <input class="recette__validation"
+                                    type="checkbox" />
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="menu__recette">
+                        <div class="recette__titre">
+                            <h3>Magret de canard</h3>
+
+                            <div class="description__recette-prix">
+                                <p class="recette__description">Et parmentier de pommes de terre</p>
+                                <p class="recette__prix">35€</p>
+                            </div>
+                        </div>
+                        <div class="back--check">
+                            <label class="border--check">
+                                <input class="recette__validation"
+                                    type="checkbox" />
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="menu__recette">
+                        <div class="recette__titre">
+                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+
+                            <div class="description__recette-prix">
+                                <p class="recette__description">Sur son lit de gnocchis aux légumes</p>
+                                <p class="recette__prix">44€</p>
+                            </div>
+                        </div>
+                        <div class="back--check">
+                            <label class="border--check">
+                                <input class="recette__validation"
+                                    type="checkbox" />
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </label>
+                        </div>
+                    </div>
+                   
+                </section>
+                <section class="menu">
+                    <h2 class="menu__titre">Desserts</h2>
+                    <div class="menu__recette">
+                        <div class="recette__titre">
+                            <h3>Pétales de violettes glacés</h3>
+
+                            <div class="description__recette-prix">
+                                <p class="recette__description">Et purée de noisettes</p>
+                                <p class="recette__prix">18€</p>
+                            </div>
+                        </div>
+                        <div class="back--check">
+                            <label class="border--check">
+                                <input class="recette__validation"
+                                    type="checkbox" />
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="menu__recette">
+                        <div class="recette__titre">
+                            <h3>Fondant au chocolat</h3>
+
+                            <div class="description__recette-prix">
+                                <p class="recette__description">Revisité</p>
+                                <p class="recette__prix">22€</p>
+                            </div>
+                        </div>
+                        <div class="back--check">
+                            <label class="border--check">
+                                <input class="recette__validation"
+                                    type="checkbox" />
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="menu__recette">
+                        <div class="recette__titre">
+                            <h3>Millefeuille croustillant</h3>
+
+                            <div class="description__recette-prix">
+                                <p class="recette__description">Myrtilles et pâte d’amande</p>
+                                <p class="recette__prix">23€</p>
+                            </div>
+                        </div>
+                        <div class="back--check">
+                            <label class="border--check">
+                                <input class="recette__validation"
+                                    type="checkbox" />
+                                <i class="fa-solid fa-check fa-1x"></i>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                <button class="form__bouton form__bouton--clair">Commander</button>
+            </form>
         </main>
+
         <footer class="omf__footer">
             <h2 class="footer__titre">ohmyfood</h2>
             <nav class="footer__navigation">

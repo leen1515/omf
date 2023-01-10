@@ -1,6 +1,6 @@
 .omf__tete {
   @include widthMarginHeight(100%, 2% auto 0 auto, auto);
-  padding: 0;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   box-shadow: 0 2px 2px $ombre;

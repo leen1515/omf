@@ -1,29 +1,157 @@
-.menumain__entete {
-        &__image {}
-
-        &__validation {}
-    }
-
-
-    .entete__titre {}
-
-    .entete__iconelike {}
-
-
-
-
-.menu {
-    &__titre {}
-
-    &__recette {}
+.tete__retour {
+  position: absolute;
+  left: 0;
+  color: $noir;
+  z-index: 5;
+  width: 50px;
 }
 
-.recette {
-    &__titre {}
+.tete__retour > a {
+  color: $noir;
+}
 
-    &__description {}
+.menu {
+  &__image {
+    width: 100%;
+    z-index: 2;
+  }
 
-    &__prix {}
+  &__validation {
+  }
+}
 
-    &__validation {}
+.section__menu {
+  position: relative;
+  top: -80px;
+  border-radius: 50px 50px 0 0;
+  background-color: $grisfonce;
+  z-index: 3;
+}
+
+.tete__logo--position {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image__taille {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.entete__titre {
+  padding: 0 0 0 $marginLeftTitre;
+  position: relative;
+  top: 50px;
+  font-family: $titre;
+  text-align: left;
+}
+
+.entete__iconelike {
+}
+
+.menu {
+  &__entete {
+    margin: -40px 0 0 0;
+  }
+
+  &__titre {
+  }
+}
+
+.menu__recette {
+  @include mixinFlex(row, space-around);
+  width:50%;
+ 
+  margin: 20px auto;
+  background-color: $grisclair;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  @include mixinOmbreLeger;
+ 
+
+}
+.recette__titre {
+  @include mixinFlex(column, space-around);
+  width: 80%;
+  height: 80px;
+  text-align: left;
+  margin: 0 auto;
+  padding:20px 0 0 20px;
+
+ 
+}
+.recette__titre>h3{
+    margin:0;
+    padding: 0;
+}
+.recette__validation {
+}
+
+.description__recette-prix {
+  @include mixinFlex(row, space-between);
+  width: 90%;
+  height: auto;
+  margin-top:-20px;
+}
+
+.recette__description {
+  @include mixinFlex(row, space-around);
+  white-space: nowrap;
+  justify-content: start;
+  display: flex;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.recette__prix {
+  @include mixinFlex(row, space-around);
+  justify-content: end;
+  text-align: right;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.back--check {
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+  background-color: $tertiaire;
+  border-radius: 0 20px 20px 0;
+  width: 100px;
+  height: auto;
+}
+
+.border--check {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  height: 28px;
+  background-color: $blanc;
+  color: $tertiaire;
+  border-radius: 50%;
+
+  margin: auto;
+}
+
+.menu__recette input {
+  visibility: hidden;
+}
+
+.menu__recette input {
+  background-color: $tertiaire;
+}
+
+.fa-check {
+  font-size: 0.8rem;
+  flex: 1;
+  margin: auto;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.menu__recette input:checked ~ .fa-check {
+  visibility: hidden;
 }

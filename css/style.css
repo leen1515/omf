@@ -51,7 +51,7 @@ a {
   width: 100%;
   margin: 2% auto 0 auto;
   height: auto;
-  padding: 0;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.256);
@@ -481,6 +481,152 @@ a {
 .navigation__li .li__lien {
   text-align: left;
   margin: 4px 0 auto 4px;
+}
+
+.tete__retour {
+  position: absolute;
+  left: 0;
+  color: #000000;
+  z-index: 5;
+  width: 50px;
+}
+
+.tete__retour > a {
+  color: #000000;
+}
+
+.menu__image {
+  width: 100%;
+  z-index: 2;
+}
+.section__menu {
+  position: relative;
+  top: -80px;
+  border-radius: 50px 50px 0 0;
+  background-color: #eaeaea;
+  z-index: 3;
+}
+
+.tete__logo--position {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image__taille {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.entete__titre {
+  padding: 0 0 0 6%;
+  position: relative;
+  top: 50px;
+  font-family: "Shrikhand", cursive;
+  text-align: left;
+}
+
+.menu__entete {
+  margin: -40px 0 0 0;
+}
+.menu__recette {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  margin: 20px auto;
+  background-color: #f7f7f7;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.256);
+}
+
+.recette__titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+  height: 80px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 20px 0 0 20px;
+}
+
+.recette__titre > h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.description__recette-prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  margin-top: -20px;
+}
+
+.recette__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  white-space: nowrap;
+  justify-content: start;
+  display: flex;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.recette__prix {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: end;
+  text-align: right;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.back--check {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  width: 100px;
+  height: auto;
+}
+
+.border--check {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  height: 28px;
+  background-color: #ffffff;
+  color: #99E2D0;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.menu__recette input {
+  visibility: hidden;
+}
+
+.menu__recette input {
+  background-color: #99E2D0;
+}
+
+.fa-check {
+  font-size: 0.8rem;
+  flex: 1;
+  margin: auto;
+  width: 100%;
+  padding-right: 20px;
+}
+
+.menu__recette input:checked ~ .fa-check {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
