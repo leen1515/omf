@@ -34,11 +34,16 @@ body {
   font-family: "Roboto";
   text-align: center;
   box-sizing: border-box;
-  max-width: 768px;
+  max-width: 800px;
 }
 @media (min-width: 800px) and (max-width: 1000px) {
   body {
     max-width: 1000px;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    max-width: 2000px;
   }
 }
 
