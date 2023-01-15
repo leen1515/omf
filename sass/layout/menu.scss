@@ -1,7 +1,7 @@
-
-.body-fond{
+.body-fond {
   background-color: $grisfonce;
 }
+
 .tete__retour {
   position: absolute;
   left: 0;
@@ -33,7 +33,7 @@
   top: -100px;
   border-radius: 50px 50px 0 0;
   z-index: 3;
-  width:100%;
+  width: 100%;
 }
 
 .tete__logo--position {
@@ -61,12 +61,8 @@
 
 .entete__iconelike {
   margin: auto 0px;
-  top:-30px;
-  
-
+  top: -30px;
 }
-
-
 
 .menu {
   &__entete {
@@ -81,20 +77,40 @@
     margin-top: 60px;
     font-size: 1rem;
     font-weight: 400;
-    border-bottom:5px solid $tertiaire;
-    width:50px;
-  
+    border-bottom: 5px solid $tertiaire;
+    width: 50px;
   }
 }
-.form__menu{
+
+.form__menu {
   background-color: $grisfonce;
   position: relative;
-  bottom:0;
+  bottom: 0;
   margin-bottom: 0;
-  height:100%;
+  height: 100%;
 }
-.menu__recette {
 
+@for $i from 1 through 10{
+  #menu__recette-#{$i} {
+    opacity: 0;
+    animation-delay: 2s+$i*0.25;
+    animation-name: menu-apparition;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+  }
+}
+@keyframes menu-apparition {
+  from {
+    opacity: 0;
+    margin-top:40px;
+  }
+  to {
+    opacity: 1;
+    margin-top:20px;
+  }
+}
+
+.menu__recette {
   background-color: $grisclair;
   display: flex;
   width: 90%;
@@ -107,8 +123,9 @@
   overflow: hidden;
   @include mixinOmbreLeger;
   white-space: nowrap;
-  &>p{
-    height:100%;
+
+  & > p {
+    height: 100%;
     margin-top: 110px;
     padding-right: 10px;
     align-self: center;
@@ -117,6 +134,7 @@
   }
 }
 
+
 .recette__description {
   @include mixinFlex(column, start);
   width: 100%;
@@ -124,6 +142,7 @@
   transition: width 1s;
   text-overflow: ellipsis;
   overflow: hidden;
+
   & > h3 {
     text-align: left;
     white-space: nowrap;
@@ -135,6 +154,7 @@
     overflow: hidden;
     font-size: 1rem;
   }
+
   .description__detail {
     text-align: left;
     white-space: nowrap;
@@ -146,6 +166,7 @@
     font-size: 0.8rem;
   }
 }
+
 .menu__prix-bouton {
   @include mixinFlex(row, end);
   align-content: end;
@@ -160,7 +181,7 @@
     text-align: right;
     font-size: 0.7rem;
     margin-top: 60px;
-    margin-right:20px;
+    margin-right: 20px;
   }
 }
 
@@ -168,9 +189,11 @@
   .recette__description {
     width: 80%;
   }
+
   .menu__prix-bouton {
     width: 20%;
   }
+
   .fa-check {
     transform: rotate(360deg);
   }
@@ -220,14 +243,20 @@
   top: 5px;
 }
 
-.menu__recette input:checked ~.recette__description {
+.menu__recette input:checked ~ .recette__description {
   width: 80%;
 }
 
-.menu__recette input:checked ~.menu__prix-bouton {
+.menu__recette input:checked ~ .menu__prix-bouton {
   width: 20%;
 }
-.menu__recette input:checked ~.menu__prix-bouton>.back--check>label>.fa-check{
+
+.menu__recette
+  input:checked
+  ~ .menu__prix-bouton
+  > .back--check
+  > label
+  > .fa-check {
   transform: rotate(-360deg);
   font-size: larger;
   font-weight: 700;
