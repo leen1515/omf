@@ -11,10 +11,14 @@
 body {
   min-width: 200px;
   @include widthMarginHeight(100%, auto, auto);
-  @include mixinFlex(column, center);
+  @include mixinFlex(column, flex-start);
   font-family: $texte;
   text-align: center;
   box-sizing: border-box;
+  max-width: 768px;
+  @include mediaM {
+    max-width: 1000px;
+  }
 }
 
 h2 {

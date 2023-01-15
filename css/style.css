@@ -30,10 +30,16 @@ body {
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: "Roboto";
   text-align: center;
   box-sizing: border-box;
+  max-width: 768px;
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  body {
+    max-width: 1000px;
+  }
 }
 
 h2 {
@@ -48,6 +54,7 @@ a {
 }
 
 .omf__tete {
+  background-color: #ffffff;
   width: 100%;
   margin: 2% auto 0 auto;
   height: auto;
@@ -56,6 +63,8 @@ a {
   justify-content: space-around;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.256);
   z-index: 4;
+  top: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -441,7 +450,7 @@ a {
 }
 
 .navigation__ul {
-  width: 100%;
+  width: auto;
   list-style: none;
   text-align: left;
   font-size: 0.6rem;
@@ -483,6 +492,10 @@ a {
   margin: 4px 0 auto 4px;
 }
 
+.body-fond {
+  background-color: #eaeaea;
+}
+
 .tete__retour {
   position: absolute;
   left: 0;
@@ -500,11 +513,15 @@ a {
   z-index: 2;
 }
 .section__menu {
-  position: relative;
-  top: -80px;
-  border-radius: 50px 50px 0 0;
   background-color: #eaeaea;
+  position: relative;
+  align-self: center;
+  margin: 0 auto;
+  height: auto;
+  top: -100px;
+  border-radius: 50px 50px 0 0;
   z-index: 3;
+  width: 100%;
 }
 
 .tete__logo--position {
@@ -520,113 +537,184 @@ a {
 }
 
 .entete__titre {
-  padding: 0 0 0 6%;
+  padding: 20px;
+  min-width: 200px;
   position: relative;
+  margin-right: 40px;
   top: 50px;
   font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
   text-align: left;
+}
+
+.entete__iconelike {
+  margin: auto 0px;
+  top: -30px;
 }
 
 .menu__entete {
   margin: -40px 0 0 0;
 }
+.menu__titre {
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 60px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-bottom: 5px solid #99E2D0;
+  width: 50px;
+}
+
+.form__menu {
+  background-color: #eaeaea;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+  height: 100%;
+}
+
 .menu__recette {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 50%;
-  margin: 20px auto;
   background-color: #f7f7f7;
+  display: flex;
+  width: 90%;
+  max-width: 600px;
+  height: 80px;
+  margin: 20px auto;
+  justify-content: center;
+  align-content: center;
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.256);
+  white-space: nowrap;
 }
-
-.recette__titre {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 80%;
-  height: 80px;
-  text-align: left;
-  margin: 0 auto;
-  padding: 20px 0 0 20px;
-}
-
-.recette__titre > h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.description__recette-prix {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90%;
-  height: auto;
-  margin-top: -20px;
+.menu__recette > p {
+  height: 100%;
+  margin-top: 110px;
+  padding-right: 10px;
+  align-self: center;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .recette__description {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  white-space: nowrap;
+  flex-direction: column;
   justify-content: start;
-  display: flex;
-  flex: 1;
+  width: 100%;
+  padding: 5px;
+  transition: width 1s;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.recette__description > h3 {
+  text-align: left;
+  white-space: nowrap;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-size: 1rem;
 }
+.recette__description .description__detail {
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 0.8rem;
+}
 
-.recette__prix {
+.menu__prix-bouton {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   justify-content: end;
+  align-content: end;
+  width: 0%;
+  height: 100%;
+  margin-right: 0;
+  overflow: hidden;
+  transition: width 1s;
+}
+.menu__prix-bouton .prix-bouton__prix {
+  height: 100%;
   text-align: right;
-  flex: 1;
-  font-size: 1rem;
+  font-size: 0.7rem;
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+.menu__recette:hover .recette__description {
+  width: 80%;
+}
+.menu__recette:hover .menu__prix-bouton {
+  width: 20%;
+}
+.menu__recette:hover .fa-check {
+  transform: rotate(360deg);
 }
 
 .back--check {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+  align-self: center;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
-  width: 100px;
-  height: auto;
+  width: 200px;
+  height: 100%;
+  margin-right: 0;
+  z-index: 1;
 }
 
 .border--check {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
+  display: block;
+  position: relative;
+  text-align: center;
+  align-self: center;
+  width: 30px;
   height: 28px;
   background-color: #ffffff;
   color: #99E2D0;
   border-radius: 50%;
-  margin: auto;
+  margin: 50px auto auto auto;
+  padding: 0;
+  z-index: 2;
 }
 
 .menu__recette input {
   visibility: hidden;
-}
-
-.menu__recette input {
   background-color: #99E2D0;
 }
 
 .fa-check {
+  position: relative;
+  align-self: center;
+  text-align: center;
+  display: block;
   font-size: 0.8rem;
-  flex: 1;
-  margin: auto;
-  width: 100%;
-  padding-right: 20px;
+  z-index: 3;
+  color: #99E2D0;
+  transition: transform 1s;
+  margin-top: -18px;
+  top: 5px;
 }
 
-.menu__recette input:checked ~ .fa-check {
-  visibility: hidden;
+.menu__recette input:checked ~ .recette__description {
+  width: 80%;
+}
+
+.menu__recette input:checked ~ .menu__prix-bouton {
+  width: 20%;
+}
+
+.menu__recette input:checked ~ .menu__prix-bouton > .back--check > label > .fa-check {
+  transform: rotate(-360deg);
+  font-size: larger;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

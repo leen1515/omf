@@ -19,7 +19,7 @@
         <title>Menu à la française</title>
     </head>
 
-    <body>
+    <body class="body-fond">
         <div class="charge"></div>
         <header class="omf__tete">
             <div class="tete__retour"><a href="./index.html"><i class="fa-solid fa-arrow-left fa-1x"></i></a></div>
@@ -30,7 +30,6 @@
                     title="oh my food">
             </div>
         </header>
-
         <div class="menu__image"><img class="image__taille"
                 src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
                 alt=""
@@ -40,181 +39,179 @@
 
             <header class="menu__entete">
                 <h1 class="entete__titre">A la française</h1>
-                <label class="restaurant__aime">
+                <label class="restaurant__aime entete__iconelike">
                     <input type="checkbox">
                     <i class="fa-regular fa-heart fa-2x fa-position">
                     </i>
                     <i class="fa-solid fa-heart fa-2x fa-color fa-position"></i>
                 </label>
             </header>
-            <form>
+            <form class="form__menu">
                 <section class="menu">
                     <h2 class="menu__titre">Entrées</h2>
                     <div class="menu__recette">
-                        <div class="recette__titre">
+                        <input class="recette__validation"
+                            type="checkbox"
+                            id="checkbox1" />
+                        <div class="recette__description">
                             <h3>Tartare de poulpe acidulé</h3>
-
-                            <div class="description__recette-prix">
-                                <p class="recette__description">Aux zestes d'orange</p>
-                                <p class="recette__prix">25€</p>
-                            </div>
+                            <p class="description__detail">Aux zestes d'orange</p>
                         </div>
-                        <div class="back--check">
-                            <label class="border--check">
-                                <input class="recette__validation"
-                                    type="checkbox" />
-                                <i class="fa-solid fa-check fa-1x"></i>
-                            </label>
+                        <p class="prix-bouton__prix">25€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="checkbox1"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__recette">
-                        <div class="recette__titre">
+                        <input class="recette__validation"
+                            type="checkbox"
+                            id="checkbox2" />
+                        <div class="recette__description">
                             <h3>Velouté de légumes d'antan</h3>
-
-                            <div class="description__recette-prix">
-                                <p class="recette__description">Carotte, panais, topnambour</p>
-                                <p class="recette__prix">35€</p>
-                            </div>
+                            <p class="description__detail">Carotte, panais, topnambour</p>
                         </div>
-                        <div class="back--check">
-                            <label class="border--check">
-                                <input class="recette__validation"
-                                    type="checkbox" />
-                                <i class="fa-solid fa-check fa-1x"></i>
-                            </label>
+                        <p class="prix-bouton__prix">35€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="checkbox2"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__recette">
-                        <div class="recette__titre">
+                        <input class="recette__validation"
+                            type="checkbox"
+                            id="checkbox3" />
+                        <div class="recette__description">
                             <h3>Soupe à l'oignon</h3>
-
-                            <div class="description__recette-prix">
-                                <p class="recette__description">revisitée</p>
-                                <p class="recette__prix">20€</p>
-                            </div>
+                            <p class="description__detail">revisitée</p>
                         </div>
-                        <div class="back--check">
-                            <label class="border--check">
-                                <input class="recette__validation"
-                                    type="checkbox" />
-                                <i class="fa-solid fa-check fa-1x"></i>
-                            </label>
+                        <p class="prix-bouton__prix">20€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="checkbox3"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <section class="menu">
                     <h2 class="menu__titre">Plats</h2>
                     <div class="menu__recette">
-                        <div class="recette__titre">
+                        <input class="recette__validation"
+                            type="checkbox"
+                            id="checkbox4" />
+                        <div class="recette__description">
                             <h3>Coquilles Saint-Jacques </h3>
-
-                            <div class="description__recette-prix">
-                                <p class="recette__description">Accompagnées d'une purée de panais</p>
-                                <p class="recette__prix">40€</p>
-                            </div>
+                            <p class="description__detail">Accompagnées d'une purée de panais</p>
                         </div>
-                        <div class="back--check">
-                            <label class="border--check">
-                                <input class="recette__validation"
-                                    type="checkbox" />
-                                <i class="fa-solid fa-check fa-1x"></i>
-                            </label>
+                        <p class="prix-bouton__prix">40€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="checkbox4"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__recette">
-                        <div class="recette__titre">
+                        <input class="recette__validation"
+                            type="checkbox"
+                            id="checkbox5" />
+                        <div class="recette__description">
                             <h3>Magret de canard</h3>
-
-                            <div class="description__recette-prix">
-                                <p class="recette__description">Et parmentier de pommes de terre</p>
-                                <p class="recette__prix">35€</p>
-                            </div>
+                            <p class="description__detail">Et parmentier de pommes de terre</p>
                         </div>
-                        <div class="back--check">
-                            <label class="border--check">
-                                <input class="recette__validation"
-                                    type="checkbox" />
-                                <i class="fa-solid fa-check fa-1x"></i>
-                            </label>
+                        <p class="prix-bouton__prix">35€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="checkbox5"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__recette">
-                        <div class="recette__titre">
+                        <input class="recette__validation"
+                            type="checkbox"
+                            id="checkbox6" />
+                        <div class="recette__description">
                             <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-
-                            <div class="description__recette-prix">
-                                <p class="recette__description">Sur son lit de gnocchis aux légumes</p>
-                                <p class="recette__prix">44€</p>
+                            <p class="description__detail">Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <p class="prix-bouton__prix">44€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="checkbox6"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>
                         </div>
-                        <div class="back--check">
-                            <label class="border--check">
-                                <input class="recette__validation"
-                                    type="checkbox" />
-                                <i class="fa-solid fa-check fa-1x"></i>
-                            </label>
-                        </div>
                     </div>
-                   
                 </section>
                 <section class="menu">
                     <h2 class="menu__titre">Desserts</h2>
                     <div class="menu__recette">
-                        <div class="recette__titre">
+                        <input class="recette__validation"
+                            type="checkbox"
+                            id="checkbox7" />
+                        <div class="recette__description">
                             <h3>Pétales de violettes glacés</h3>
-
-                            <div class="description__recette-prix">
-                                <p class="recette__description">Et purée de noisettes</p>
-                                <p class="recette__prix">18€</p>
-                            </div>
+                            <p class="description__detail">Et purée de noisettes</p>
                         </div>
-                        <div class="back--check">
-                            <label class="border--check">
-                                <input class="recette__validation"
-                                    type="checkbox" />
-                                <i class="fa-solid fa-check fa-1x"></i>
-                            </label>
+                        <p class="prix-bouton__prix">18€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="checkbox7"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__recette">
-                        <div class="recette__titre">
+                        <input class="recette__validation"
+                            type="checkbox"
+                            id="checkbox8" />
+                        <div class="recette__description">
                             <h3>Fondant au chocolat</h3>
-
-                            <div class="description__recette-prix">
-                                <p class="recette__description">Revisité</p>
-                                <p class="recette__prix">22€</p>
-                            </div>
+                            <p class="description__detail">Revisité</p>
                         </div>
-                        <div class="back--check">
-                            <label class="border--check">
-                                <input class="recette__validation"
-                                    type="checkbox" />
-                                <i class="fa-solid fa-check fa-1x"></i>
-                            </label>
+                        <p class="prix-bouton__prix">22€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="checkbox8"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
+                            </div>
                         </div>
                     </div>
                     <div class="menu__recette">
-                        <div class="recette__titre">
+                        <input class="recette__validation"
+                            type="checkbox"
+                            id="checkbox9" />
+                        <div class="recette__description">
                             <h3>Millefeuille croustillant</h3>
-
-                            <div class="description__recette-prix">
-                                <p class="recette__description">Myrtilles et pâte d’amande</p>
-                                <p class="recette__prix">23€</p>
-                            </div>
+                            <p class="description__detail">Myrtilles et pâte d’amande</p>
                         </div>
-                        <div class="back--check">
-                            <label class="border--check">
-                                <input class="recette__validation"
-                                    type="checkbox" />
-                                <i class="fa-solid fa-check fa-1x"></i>
-                            </label>
+                        <p class="prix-bouton__prix">23€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="checkbox9"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <button class="form__bouton form__bouton--clair">Commander</button>
             </form>
         </main>
-
         <footer class="omf__footer">
             <h2 class="footer__titre">ohmyfood</h2>
             <nav class="footer__navigation">

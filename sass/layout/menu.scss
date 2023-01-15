@@ -1,3 +1,7 @@
+
+.body-fond{
+  background-color: $grisfonce;
+}
 .tete__retour {
   position: absolute;
   left: 0;
@@ -21,11 +25,15 @@
 }
 
 .section__menu {
-  position: relative;
-  top: -80px;
-  border-radius: 50px 50px 0 0;
   background-color: $grisfonce;
+  position: relative;
+  align-self: center;
+  margin: 0 auto;
+  height: auto;
+  top: -100px;
+  border-radius: 50px 50px 0 0;
   z-index: 3;
+  width:100%;
 }
 
 .tete__logo--position {
@@ -41,15 +49,24 @@
 }
 
 .entete__titre {
-  padding: 0 0 0 $marginLeftTitre;
+  padding: 20px;
+  min-width: 200px;
   position: relative;
+  margin-right: 40px;
   top: 50px;
   font-family: $titre;
+  font-size: 1.5rem;
   text-align: left;
 }
 
 .entete__iconelike {
+  margin: auto 0px;
+  top:-30px;
+  
+
 }
+
+
 
 .menu {
   &__entete {
@@ -57,101 +74,161 @@
   }
 
   &__titre {
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 60px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom:5px solid $tertiaire;
+    width:50px;
+  
   }
 }
-
+.form__menu{
+  background-color: $grisfonce;
+  position: relative;
+  bottom:0;
+  margin-bottom: 0;
+  height:100%;
+}
 .menu__recette {
-  @include mixinFlex(row, space-around);
-  width:50%;
- 
-  margin: 20px auto;
+
   background-color: $grisclair;
+  display: flex;
+  width: 90%;
+  max-width: 600px;
+  height: 80px;
+  margin: 20px auto;
+  justify-content: center;
+  align-content: center;
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
   @include mixinOmbreLeger;
- 
-
-}
-.recette__titre {
-  @include mixinFlex(column, space-around);
-  width: 80%;
-  height: 80px;
-  text-align: left;
-  margin: 0 auto;
-  padding:20px 0 0 20px;
-
- 
-}
-.recette__titre>h3{
-    margin:0;
-    padding: 0;
-}
-.recette__validation {
-}
-
-.description__recette-prix {
-  @include mixinFlex(row, space-between);
-  width: 90%;
-  height: auto;
-  margin-top:-20px;
+  white-space: nowrap;
+  &>p{
+    height:100%;
+    margin-top: 110px;
+    padding-right: 10px;
+    align-self: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
 }
 
 .recette__description {
-  @include mixinFlex(row, space-around);
-  white-space: nowrap;
-  justify-content: start;
-  display: flex;
-  flex: 1;
-  font-size: 1rem;
+  @include mixinFlex(column, start);
+  width: 100%;
+  padding: 5px;
+  transition: width 1s;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  & > h3 {
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1rem;
+  }
+  .description__detail {
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.8rem;
+  }
+}
+.menu__prix-bouton {
+  @include mixinFlex(row, end);
+  align-content: end;
+  width: 0%;
+  height: 100%;
+  margin-right: 0;
+  overflow: hidden;
+  transition: width 1s;
+
+  .prix-bouton__prix {
+    height: 100%;
+    text-align: right;
+    font-size: 0.7rem;
+    margin-top: 60px;
+    margin-right:20px;
+  }
 }
 
-.recette__prix {
-  @include mixinFlex(row, space-around);
-  justify-content: end;
-  text-align: right;
-  flex: 1;
-  font-size: 1rem;
+.menu__recette:hover {
+  .recette__description {
+    width: 80%;
+  }
+  .menu__prix-bouton {
+    width: 20%;
+  }
+  .fa-check {
+    transform: rotate(360deg);
+  }
 }
 
 .back--check {
-  position: relative;
-
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+  align-self: center;
   background-color: $tertiaire;
   border-radius: 0 20px 20px 0;
-  width: 100px;
-  height: auto;
+  width: 200px;
+  height: 100%;
+  margin-right: 0;
+  z-index: 1;
 }
 
 .border--check {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
+  display: block;
+  position: relative;
+  text-align: center;
+  align-self: center;
+  width: 30px;
   height: 28px;
   background-color: $blanc;
   color: $tertiaire;
   border-radius: 50%;
-
-  margin: auto;
+  margin: 50px auto auto auto;
+  padding: 0;
+  z-index: 2;
 }
 
 .menu__recette input {
   visibility: hidden;
-}
-
-.menu__recette input {
   background-color: $tertiaire;
 }
 
 .fa-check {
+  position: relative;
+  align-self: center;
+  text-align: center;
+  display: block;
   font-size: 0.8rem;
-  flex: 1;
-  margin: auto;
-  width: 100%;
-  padding-right: 20px;
+  z-index: 3;
+  color: $tertiaire;
+  transition: transform 1s;
+  margin-top: -18px;
+  top: 5px;
 }
 
-.menu__recette input:checked ~ .fa-check {
-  visibility: hidden;
+.menu__recette input:checked ~.recette__description {
+  width: 80%;
+}
+
+.menu__recette input:checked ~.menu__prix-bouton {
+  width: 20%;
+}
+.menu__recette input:checked ~.menu__prix-bouton>.back--check>label>.fa-check{
+  transform: rotate(-360deg);
+  font-size: larger;
+  font-weight: 700;
 }
