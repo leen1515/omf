@@ -23,6 +23,203 @@
   }
 }
 
+.charge {
+  background-color: #000000;
+  border: 10px solid #99E2D0;
+  border-radius: 25%;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  z-index: 5;
+  animation-name: chargement;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  box-sizing: border-box;
+}
+
+@keyframes chargement {
+  0% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.charge__icone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 0;
+  margin: 150px;
+  z-index: 15;
+  width: 100%;
+  color: #FF79DA;
+}
+.charge__icone .icone__magasin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.charge__icone .icone__visage-1 {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  animation-delay: 0.25s;
+  transform: translate(-50%, -50%);
+  animation-name: visage-dansant;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.charge__icone .icone__visage-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation-delay: 0.5s;
+  transform: translate(-50%, -50%);
+  animation-name: visage-dansant;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.charge__icone .icone__visage-3 {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  animation-delay: 0.75s;
+  transform: translate(-50%, -50%);
+  animation-name: visage-dansant;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.charge__icone .icone__couverts-1 {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  animation-delay: 0.25s;
+  transform: translate(-50%, -50%);
+  animation-name: visage-dansant;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.charge__icone .icone__couverts-2 {
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  animation-delay: 0.5s;
+  transform: translate(-50%, -50%);
+  animation-name: visage-dansant;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.charge__icone .icone__couverts-3 {
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  animation-delay: 0.75s;
+  transform: translate(-50%, -50%);
+  animation-name: visage-dansant;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.charge__icone .icone__nourriture-1 {
+  position: absolute;
+  top: 50%;
+  left: 67%;
+  animation-delay: 0.25s;
+  transform: translate(-50%, -50%);
+  animation-name: visage-dansant;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.charge__icone .icone__nourriture-2 {
+  position: absolute;
+  top: 50%;
+  left: 64%;
+  animation-delay: 0.5s;
+  transform: translate(-50%, -50%);
+  animation-name: visage-dansant;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+.charge__icone .icone__nourriture-3 {
+  position: absolute;
+  top: 50%;
+  left: 61%;
+  animation-delay: 0.75s;
+  transform: translate(-50%, -50%);
+  animation-name: visage-dansant;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes visage-dansant {
+  from {
+    top: 53%;
+  }
+  to {
+    top: 48%;
+  }
+}
+
+.logo__charge {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 16;
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: "Shrikhand", cursive;
+}
+
+.bouton__chargement {
+  position: absolute;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  font-size: 1rem;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(0deg, #9356DC, #fface8);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.256);
+  animation-name: bouton-lumiere;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+}
+
+@keyframes bouton-lumiere {
+  0% {
+    background: #ff79da;
+  }
+  100% {
+    background: #a356ff;
+  }
+}
 body {
   min-width: 200px;
   width: 100%;
@@ -582,7 +779,7 @@ a {
 
 #menu__recette-1 {
   opacity: 0;
-  animation-delay: 2.25s;
+  animation-delay: 4.25s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -590,7 +787,7 @@ a {
 
 #menu__recette-2 {
   opacity: 0;
-  animation-delay: 2.5s;
+  animation-delay: 4.5s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -598,7 +795,7 @@ a {
 
 #menu__recette-3 {
   opacity: 0;
-  animation-delay: 2.75s;
+  animation-delay: 4.75s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -606,7 +803,7 @@ a {
 
 #menu__recette-4 {
   opacity: 0;
-  animation-delay: 3s;
+  animation-delay: 5s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -614,7 +811,7 @@ a {
 
 #menu__recette-5 {
   opacity: 0;
-  animation-delay: 3.25s;
+  animation-delay: 5.25s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -622,7 +819,7 @@ a {
 
 #menu__recette-6 {
   opacity: 0;
-  animation-delay: 3.5s;
+  animation-delay: 5.5s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -630,7 +827,7 @@ a {
 
 #menu__recette-7 {
   opacity: 0;
-  animation-delay: 3.75s;
+  animation-delay: 5.75s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -638,7 +835,7 @@ a {
 
 #menu__recette-8 {
   opacity: 0;
-  animation-delay: 4s;
+  animation-delay: 6s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -646,7 +843,7 @@ a {
 
 #menu__recette-9 {
   opacity: 0;
-  animation-delay: 4.25s;
+  animation-delay: 6.25s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -654,7 +851,7 @@ a {
 
 #menu__recette-10 {
   opacity: 0;
-  animation-delay: 4.5s;
+  animation-delay: 6.5s;
   animation-name: menu-apparition;
   animation-duration: 3s;
   animation-fill-mode: forwards;

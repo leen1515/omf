@@ -93,7 +93,7 @@
 @for $i from 1 through 10{
   #menu__recette-#{$i} {
     opacity: 0;
-    animation-delay: 2s+$i*0.25;
+    animation-delay: 4s+$i*0.25;
     animation-name: menu-apparition;
     animation-duration: 3s;
     animation-fill-mode: forwards;
