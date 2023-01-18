@@ -117,12 +117,11 @@
     width:100%;
     z-index:16;
     color:$blanc;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family:$titre;
 
 }
 .bouton__chargement {
-  position: absolute;
   position: absolute;
   top: 70%;
   left: 50%;
@@ -157,7 +156,6 @@ body {
   text-align: center;
   box-sizing: border-box;
   max-width: 800px;
-
   @include mediaM {
     max-width: 1000px;
   }

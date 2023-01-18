@@ -5,9 +5,10 @@
   overflow: hidden;
   @include mixinOmbreLeger();
   flex: 1;
-  margin: 0 2% 40px 2%;
+  margin: 0 auto 40px auto;
   @include mediaXL {
     max-width: 400px;
+    width:20%;
   }
   & > a {
     @include mixinFlex(column, center);

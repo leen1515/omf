@@ -1,148 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e4b2bae8e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <title>La palette du gout</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport"
-            content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/e4b2bae8e0.js"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet"
-            href="./css/style.css">
-        <link rel="preconnect"
-            href="https://fonts.googleapis.com">
-        <link rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-            rel="stylesheet">
-        <title>La note enchantée</title>
-    </head>
+  <body class="body-fond">
+    <header class="omf__tete">
+      <div class="tete__retour">
+        <a href="./index.html"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+      </div>
+      <div class="tete__logo">
+        <img
+          class="tete__logo--position"
+          src="./images/logo/ohmyfood.png"
+          alt="logo de oh my food"
+          title="oh my food"
+        />
+      </div>
+    </header>
+    <div class="menu__image">
+      <img
+        class="image__taille"
+        src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt=""
+        title=""
+      />
+    </div>
 
-    <body>
-        <div class="loader"></div>
-        <header class="omf__head">
-            <div class="head__retour"><a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
-            <div class="head__logo">
-                <img src="./images/logo/ohmyfood.png"
-                    alt="logo de oh my food"
-                    title="oh my food">
+    <main class="section__menu">
+      <header class="menu__entete">
+        <h1 class="entete__titre">La palette du goût</h1>
+        <label class="restaurant__aime entete__iconelike">
+          <input type="checkbox" />
+          <i class="fa-regular fa-heart fa-2x fa-position"> </i>
+          <i class="fa-solid fa-heart fa-2x fa-color fa-position"></i>
+        </label>
+      </header>
+
+      <form class="form__menu">
+        <section class="menu">
+          <h2 class="menu__titre">Entrées</h2>
+          <div class="menu__recette" id="menu__recette-1">
+            <input
+              class="recette__validation"
+              type="radio"
+              id="fricasseeD"
+              name="entrees"
+            />
+            <div class="recette__description">
+              <h3>Fricassée d'escargot</h3>
+              <p class="description__detail">Au piment d'Espelette</p>
             </div>
-        </header>
-        <main class="menumain">
-            <div class="menumain__image"><img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                    alt=""
-                    title=""></div>
-            <header class="menumain__entete">
-                <h1 class="entete__titre">La palette du goût</h1>
-                <div class="entete__iconelike"></div>
-            </header>
-
-            <section class="menu">
-                <h2 class="menu__titre">Entrées</h2>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Fricassée d'escargot</h3>
-                    <p class="recette__description">Au piment d'Espelette </p>
-                    <p class="recette__prix">25€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Foie gras de canard mi-cuit</h3>
-                    <p class="recette__description">Et ses copeaux de truffe noire</p>
-                    <p class="recette__prix">35€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Œuf au plat</h3>
-                    <p class="recette__description">Assaisonné à la truffe sur lit de caviar</p>
-                    <p class="recette__prix">20€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="menu">
-                <h2 class="menu__titre">Plats</h2>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Filet de boeuf aux herbes
-                    </h3>
-                    <p class="recette__description">Accompagné de sa ribambelle de légumes</p>
-                    <p class="recette__prix">40€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Parmentier de queue de boeuf</h3>
-                    <p class="recette__description">À la truffe noire sur sa purée de panais</p>
-                    <p class="recette__prix">35€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Filet de turbot</h3>
-                    <p class="recette__description">Aux agrumes</p>
-                    <p class="recette__prix">44€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="menu">
-                <h2 class="menu__titre">Desserts</h2>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Paris-Brest</h3>
-                    <p class="recette__description">Revisité</p>
-                    <p class="recette__prix">18€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Macaron au chocolat d'exception </h3>
-                    <p class="recette__description">Et glace à la vanille de Madagascar</p>
-                    <p class="recette__prix">22€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Mousse au chocolat </h3>
-                    <p class="recette__description">Au piment d'Espelette et à la truffe noire</p>
-                    <p class="recette__prix">23€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-            </section>
-            <button class="menumain__validation">Commander</button>
-        </main>
-        <footer class="omf__footer">
-            <h2 class="footer__titre">ohmyfood</h2>
-            <nav class="footer__navigation">
-                <ul class="navigation__ul">
-                    <li class="navigation__li">
-                        <div class="li__icone"></div>
-                        <p class="li__lien">Proposer un restaurant</p>
-                    </li>
-                    <li class="navigation__li">
-                        <div class="li__icone"></div>
-                        <p class="li__lien">Devenir partenaire</p>
-                    </li>
-                    <li class="navigation__li">
-                        <p class="li__lien">Mention légales</p>
-                    </li>
-                    <li class="navigation__li">
-                        <p class="li__lien"><a href="mailto:yi.yolkin@gmail.com">Contact</a></p>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
-
+            <p class="prix-bouton__prix">25€</p>
+            <div class="menu__prix-bouton">
+              <div class="back--check">
+                <label for="fricasseeD" class="border--check">
+                  <i class="fa-solid fa-check fa-1x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+          <div class="menu__recette" id="menu__recette-2">
+            <input
+              class="recette__validation"
+              type="radio"
+              id="foieG"
+              name="entrees"
+            />
+            <div class="recette__description">
+              <h3>Foie gras de canard mi-cuit</h3>
+              <p class="description__detail">Et ses copeaux de truffe noire</p>
+            </div>
+            <p class="prix-bouton__prix">20€</p>
+            <div class="menu__prix-bouton">
+              <div class="back--check">
+                <label for="foieG" class="border--check">
+                  <i class="fa-solid fa-check fa-1x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+          <div class="menu__recette" id="menu__recette-3">
+            <input
+              class="recette__validation"
+              type="radio"
+              id="oeufA"
+              name="entrees"
+            />
+            <div class="recette__description">
+              <h3>Œuf au plat</h3>
+              <p class="description__detail">
+                Assaisonné à la truffe sur lit de caviar
+              </p>
+            </div>
+            <p class="prix-bouton__prix">35€</p>
+            <div class="menu__prix-bouton">
+              <div class="back--check">
+                <label for="oeufA" class="border--check">
+                  <i class="fa-solid fa-check fa-1x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="menu">
+          <h2 class="menu__titre">Plats</h2>
+          <div class="menu__recette" id="menu__recette-4">
+            <input
+              class="recette__validation"
+              type="radio"
+              id="filetD"
+              name="plats"
+            />
+            <div class="recette__description">
+              <h3>Filet de boeuf aux herbes</h3>
+              <p class="description__detail">
+                Accompagné de sa ribambelle de légumes
+              </p>
+            </div>
+            <p class="prix-bouton__prix">35€</p>
+            <div class="menu__prix-bouton">
+              <div class="back--check">
+                <label for="filetD" class="border--check">
+                  <i class="fa-solid fa-check fa-1x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+          <div class="menu__recette" id="menu__recette-5">
+            <input
+              class="recette__validation"
+              type="radio"
+              id="parmentierQ"
+              name="plats"
+            />
+            <div class="recette__description">
+              <h3>Parmentier de queue de boeuf</h3>
+              <p class="description__detail">
+                À la truffe noire sur sa purée de panais
+              </p>
+            </div>
+            <p class="prix-bouton__prix">44€</p>
+            <div class="menu__prix-bouton">
+              <div class="back--check">
+                <label for="parmentierQ" class="border--check">
+                  <i class="fa-solid fa-check fa-1x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+          <div class="menu__recette" id="menu__recette-6">
+            <input
+              class="recette__validation"
+              type="radio"
+              id="filetT"
+              name="plats"
+            />
+            <div class="recette__description">
+              <h3>Filet de turbot</h3>
+              <p class="description__detail">Aux agrumes</p>
+            </div>
+            <p class="prix-bouton__prix">44€</p>
+            <div class="menu__prix-bouton">
+              <div class="back--check">
+                <label for="filetT" class="border--check">
+                  <i class="fa-solid fa-check fa-1x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="menu">
+          <h2 class="menu__titre">Desserts</h2>
+          <div class="menu__recette" id="menu__recette-7">
+            <input
+              class="recette__validation"
+              type="radio"
+              id="parisB"
+              name="desserts"
+            />
+            <div class="recette__description">
+              <h3>Paris-Brest</h3>
+              <p class="description__detail">Revisité</p>
+            </div>
+            <p class="prix-bouton__prix">18€</p>
+            <div class="menu__prix-bouton">
+              <div class="back--check">
+                <label for="parisB" class="border--check">
+                  <i class="fa-solid fa-check fa-1x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+          <div class="menu__recette" id="menu__recette-8">
+            <input
+              class="recette__validation"
+              type="radio"
+              id="macaronC"
+              name="desserts"
+            />
+            <div class="recette__description">
+              <h3>Macaron au chocolat d'exception</h3>
+              <p class="description__detail">
+                Et glace à la vanille de Madagascar
+              </p>
+            </div>
+            <p class="prix-bouton__prix">22€</p>
+            <div class="menu__prix-bouton">
+              <div class="back--check">
+                <label for="macaronC" class="border--check">
+                  <i class="fa-solid fa-check fa-1x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+          <div class="menu__recette" id="menu__recette-9">
+            <input
+              class="recette__validation"
+              type="radio"
+              id="mousseC"
+              name="desserts"
+            />
+            <div class="recette__description">
+              <h3>Mousse au chocolat</h3>
+              <p class="description__detail">
+                Au piment d'Espelette et à la truffe noire
+              </p>
+            </div>
+            <p class="prix-bouton__prix">23€</p>
+            <div class="menu__prix-bouton">
+              <div class="back--check">
+                <label for="mousseC" class="border--check">
+                  <i class="fa-solid fa-check fa-1x"></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <button class="form__bouton form__bouton--clair">Commander</button>
+      </form>
+    </main>
+    <footer class="omf__footer">
+      <h2 class="footer__titre">ohmyfood</h2>
+      <nav class="footer__navigation">
+        <ul class="navigation__ul">
+          <li class="navigation__li">
+            <div class="li__icone"></div>
+            <p class="li__lien">Proposer un restaurant</p>
+          </li>
+          <li class="navigation__li">
+            <div class="li__icone"></div>
+            <p class="li__lien">Devenir partenaire</p>
+          </li>
+          <li class="navigation__li">
+            <p class="li__lien">Mention légales</p>
+          </li>
+          <li class="navigation__li">
+            <p class="li__lien">
+              <a href="mailto:yi.yolkin@gmail.com">Contact</a>
+            </p>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

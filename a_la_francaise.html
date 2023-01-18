@@ -20,24 +20,6 @@
     </head>
 
     <body class="body-fond">
-        <div class="charge">
-            <div class="charge__icone">
-                <div class="logo__charge">ohmyfood
-                </div>
-                <div class="icone__magasin"><i class="fa-solid fa-store fa-10x"></i></div>
-                <div class="icone__visage-1"><i class="fa-solid fa-face-laugh-beam"></i></div>
-                <div class="icone__visage-2"><i class="fa-solid fa-face-laugh-beam"></i></div>
-                <div class="icone__visage-3"><i class="fa-solid fa-face-laugh-beam"></i></div>
-                <div class="icone__couverts-1"><i class="fa-solid fa-utensils"></i></div>
-                <div class="icone__couverts-2"><i class="fa-solid fa-utensils"></i></div>
-                <div class="icone__couverts-3"><i class="fa-solid fa-utensils"></i></div>
-                <div class="icone__nourriture-1"><i class="fa-solid fa-plate-wheat"></i></div>
-                <div class="icone__nourriture-2"><i class="fa-solid fa-plate-wheat"></i></div>
-                <div class="icone__nourriture-3"><i class="fa-solid fa-plate-wheat"></i></div>
-                <button class="form__bouton bouton__chargement">...En chargement...
-                </button>
-            </div>
-        </div>
         <header class="omf__tete">
             <div class="tete__retour"><a href="./index.html"><i class="fa-solid fa-arrow-left fa-1x"></i></a></div>
             <div class="tete__logo">
@@ -69,8 +51,9 @@
                     <div class="menu__recette"
                         id="menu__recette-1">
                         <input class="recette__validation"
-                            type="checkbox"
-                            id="checkbox1" />
+                            type="radio"
+                            id="tartareD"
+                            name="entrees" />
                         <div class="recette__description">
                             <h3>Tartare de poulpe acidulé</h3>
                             <p class="description__detail">Aux zestes d'orange</p>
@@ -78,7 +61,7 @@
                         <p class="prix-bouton__prix">25€</p>
                         <div class="menu__prix-bouton">
                             <div class="back--check">
-                                <label for="checkbox1"
+                                <label for="tartareD"
                                     class="border--check">
                                     <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>
@@ -87,8 +70,9 @@
                     <div class="menu__recette"
                         id="menu__recette-2">
                         <input class="recette__validation"
-                            type="checkbox"
-                            id="checkbox2" />
+                            type="radio"
+                            id="velouteD"
+                            name="entrees" />
                         <div class="recette__description">
                             <h3>Velouté de légumes d'antan</h3>
                             <p class="description__detail">Carotte, panais, topnambour</p>
@@ -96,7 +80,7 @@
                         <p class="prix-bouton__prix">35€</p>
                         <div class="menu__prix-bouton">
                             <div class="back--check">
-                                <label for="checkbox2"
+                                <label for="velouteD"
                                     class="border--check">
                                     <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>
@@ -105,8 +89,9 @@
                     <div class="menu__recette"
                         id="menu__recette-3">
                         <input class="recette__validation"
-                            type="checkbox"
-                            id="checkbox3" />
+                            type="radio"
+                            id="soupeA"
+                            name="entrees" />
                         <div class="recette__description">
                             <h3>Soupe à l'oignon</h3>
                             <p class="description__detail">revisitée</p>
@@ -114,7 +99,7 @@
                         <p class="prix-bouton__prix">20€</p>
                         <div class="menu__prix-bouton">
                             <div class="back--check">
-                                <label for="checkbox3"
+                                <label for="soupeA"
                                     class="border--check">
                                     <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>
@@ -126,8 +111,9 @@
                     <div class="menu__recette"
                         id="menu__recette-4">
                         <input class="recette__validation"
-                            type="checkbox"
-                            id="checkbox4" />
+                            type="radio"
+                            id="coquillesS"
+                            name="plats" />
                         <div class="recette__description">
                             <h3>Coquilles Saint-Jacques </h3>
                             <p class="description__detail">Accompagnées d'une purée de panais</p>
@@ -135,7 +121,7 @@
                         <p class="prix-bouton__prix">40€</p>
                         <div class="menu__prix-bouton">
                             <div class="back--check">
-                                <label for="checkbox4"
+                                <label for="coquillesS"
                                     class="border--check">
                                     <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>
@@ -144,8 +130,9 @@
                     <div class="menu__recette"
                         id="menu__recette-5">
                         <input class="recette__validation"
-                            type="checkbox"
-                            id="checkbox5" />
+                            type="radio"
+                            id="magretC"
+                            name="plats" />
                         <div class="recette__description">
                             <h3>Magret de canard</h3>
                             <p class="description__detail">Et parmentier de pommes de terre</p>
@@ -153,7 +140,7 @@
                         <p class="prix-bouton__prix">35€</p>
                         <div class="menu__prix-bouton">
                             <div class="back--check">
-                                <label for="checkbox5"
+                                <label for="magretC"
                                     class="border--check">
                                     <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>
@@ -162,8 +149,9 @@
                     <div class="menu__recette"
                         id="menu__recette-6">
                         <input class="recette__validation"
-                            type="checkbox"
-                            id="checkbox6" />
+                            type="radio"
+                            id="pigeonneauD"
+                            name="plats" />
                         <div class="recette__description">
                             <h3>Pigeonneau d’Ille-et-Vilaine</h3>
                             <p class="description__detail">Sur son lit de gnocchis aux légumes</p>
@@ -171,7 +159,7 @@
                         <p class="prix-bouton__prix">44€</p>
                         <div class="menu__prix-bouton">
                             <div class="back--check">
-                                <label for="checkbox6"
+                                <label for="pigeonneauD"
                                     class="border--check">
                                     <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>
@@ -183,8 +171,9 @@
                     <div class="menu__recette"
                         id="menu__recette-7">
                         <input class="recette__validation"
-                            type="checkbox"
-                            id="checkbox7" />
+                            type="radio"
+                            id="petalesV"
+                            name="desserts" />
                         <div class="recette__description">
                             <h3>Pétales de violettes glacés</h3>
                             <p class="description__detail">Et purée de noisettes</p>
@@ -192,7 +181,7 @@
                         <p class="prix-bouton__prix">18€</p>
                         <div class="menu__prix-bouton">
                             <div class="back--check">
-                                <label for="checkbox7"
+                                <label for="petalesV"
                                     class="border--check">
                                     <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>
@@ -201,8 +190,9 @@
                     <div class="menu__recette"
                         id="menu__recette-8">
                         <input class="recette__validation"
-                            type="checkbox"
-                            id="checkbox8" />
+                            type="radio"
+                            id="fondantC"
+                            name="desserts" />
                         <div class="recette__description">
                             <h3>Fondant au chocolat</h3>
                             <p class="description__detail">Revisité</p>
@@ -210,7 +200,7 @@
                         <p class="prix-bouton__prix">22€</p>
                         <div class="menu__prix-bouton">
                             <div class="back--check">
-                                <label for="checkbox8"
+                                <label for="fondantC"
                                     class="border--check">
                                     <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>
@@ -219,8 +209,9 @@
                     <div class="menu__recette"
                         id="menu__recette-9">
                         <input class="recette__validation"
-                            type="checkbox"
-                            id="checkbox9" />
+                            type="radio"
+                            id="millefeuilleC"
+                            name="desserts"/>
                         <div class="recette__description">
                             <h3>Millefeuille croustillant</h3>
                             <p class="description__detail">Myrtilles et pâte d’amande</p>
@@ -228,7 +219,7 @@
                         <p class="prix-bouton__prix">23€</p>
                         <div class="menu__prix-bouton">
                             <div class="back--check">
-                                <label for="checkbox9"
+                                <label for="millefeuilleC"
                                     class="border--check">
                                     <i class="fa-solid fa-check fa-1x"></i></label>
                             </div>

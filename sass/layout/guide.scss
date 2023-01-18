@@ -73,7 +73,7 @@
   }
 }
 
-.etapes__carte--change:hover {
+.etapes__carte--change{
   @extend .etapes__carte;
   background-color: adjust-color($primaire, $alpha: -0.8);
   .carte__icone {

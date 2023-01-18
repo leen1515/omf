@@ -194,12 +194,11 @@
   width: 100%;
   z-index: 16;
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Shrikhand", cursive;
 }
 
 .bouton__chargement {
-  position: absolute;
   position: absolute;
   top: 70%;
   left: 50%;
@@ -391,7 +390,7 @@ a {
   }
 }
 
-.etapes__carte, .etapes__carte--change:hover {
+.etapes__carte, .etapes__carte--change {
   background-color: #f7f7f7;
   display: flex;
   flex-direction: row;
@@ -406,19 +405,19 @@ a {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.256);
 }
 @media (min-width: 800px) and (max-width: 1000px) {
-  .etapes__carte, .etapes__carte--change:hover {
+  .etapes__carte, .etapes__carte--change {
     font-size: 0.4rem;
     min-width: 50px;
     max-width: 250px;
   }
 }
 @media (min-width: 1000px) {
-  .etapes__carte, .etapes__carte--change:hover {
+  .etapes__carte, .etapes__carte--change {
     font-size: 0.7rem;
     max-width: 300px;
   }
 }
-.etapes__carte .carte__index, .etapes__carte--change:hover .carte__index {
+.etapes__carte .carte__index, .etapes__carte--change .carte__index {
   color: #ffffff;
   margin: auto 5% auto -10px;
   height: 15px;
@@ -426,19 +425,19 @@ a {
   padding: 5px 10px;
   border-radius: 50%;
 }
-.etapes__carte .carte__icone, .etapes__carte--change:hover .carte__icone {
+.etapes__carte .carte__icone, .etapes__carte--change .carte__icone {
   margin: auto 10px;
   color: #828282;
 }
-.etapes__carte .carte__titre, .etapes__carte--change:hover .carte__titre {
+.etapes__carte .carte__titre, .etapes__carte--change .carte__titre {
   margin: 10px 10px;
   color: #4f4f4f;
 }
 
-.etapes__carte--change:hover {
+.etapes__carte--change {
   background-color: rgba(147, 86, 220, 0.2);
 }
-.etapes__carte--change:hover .carte__icone {
+.etapes__carte--change .carte__icone {
   color: #9356DC;
 }
 
@@ -446,6 +445,7 @@ a {
   background-color: #f7f7f7;
   padding-bottom: 40px;
   margin-top: 40px;
+  margin: auto;
   height: auto;
 }
 @media (min-width: 1000px) {
@@ -461,8 +461,9 @@ a {
   .main__restaurants {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
     white-space: normal;
   }
 }
@@ -497,11 +498,12 @@ a {
   overflow: hidden;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.256);
   flex: 1;
-  margin: 0 2% 40px 2%;
+  margin: 0 auto 40px auto;
 }
 @media (min-width: 1000px) {
   .restaurants__lien {
     max-width: 400px;
+    width: 20%;
   }
 }
 .restaurants__lien > a {
@@ -909,7 +911,7 @@ a {
   width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .recette__description .description__detail {
   text-align: left;

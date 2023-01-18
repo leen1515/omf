@@ -19,109 +19,215 @@
         <title>Le délice des sens</title>
     </head>
 
-    <body>
-        <div class="loader"></div>
-        <header class="omf__head">
-            <div class="head__retour"><a href="./index.html"><i class="fa-solid fa-arrow-left"></i></a></div>
-            <div class="head__logo">
-                <img src="./images/logo/ohmyfood.png"
+    <body class="body-fond">
+        <header class="omf__tete">
+            <div class="tete__retour"><a href="./index.html"><i class="fa-solid fa-arrow-left fa-1x"></i></a></div>
+            <div class="tete__logo">
+                <img class="tete__logo--position"
+                    src="./images/logo/ohmyfood.png"
                     alt="logo de oh my food"
                     title="oh my food">
             </div>
         </header>
-        <main class="menumain">
-            <div class="menumain__image"><img
-                    src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                    alt=""
-                    title=""></div>
-            <header class="menumain__entete">
-                <h1 class="entete__titre">Le délice des sens</h1>
-                <div class="entete__iconelike"></div>
-            </header>
+        <div class="menu__image"><img class="image__taille"
+                src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt=""
+                title=""></div>
 
-            <section class="menu">
-                <h2 class="menu__titre">Entrées</h2>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Tartare de thon</h3>
-                    <p class="recette__description">Assaisonné au yuzu</p>
-                    <p class="recette__prix">25€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Bouchée de homard croustillant</h3>
-                    <p class="recette__description">Et sa farandole de petits légumes</p>
-                    <p class="recette__prix">35€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Velouté de cèpes</h3>
-                    <p class="recette__description">Aux truffes</p>
-                    <p class="recette__prix">20€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-            </section>
-            <section class="menu">
-                <h2 class="menu__titre">Plats</h2>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Poulet rôti aux herbes de Provence
+        <main class="section__menu">
+
+           <header class="menu__entete">
+                <h1 class="entete__titre">Le délice des sens</h1>
+                <label class="restaurant__aime entete__iconelike">
+                    <input type="checkbox">
+                    <i class="fa-regular fa-heart fa-2x fa-position">
+                    </i>
+                    <i class="fa-solid fa-heart fa-2x fa-color fa-position"></i>
+                </label>
+            </header>
+            <form class="form__menu">
+                <section class="menu">
+                    <h2 class="menu__titre">Entrées</h2>
+                    <div class="menu__recette"
+                        id="menu__recette-1">
+                        <input class="recette__validation"
+                            type="radio"
+                            id="AssaisonneY"
+                            name="entrees" />
+                        <div class="recette__description">
+                            <h3>Tartare de thon</h3>
+                            <p class="description__detail">Assaisonné au yuzu</p>
+                        </div>
+                        <p class="prix-bouton__prix">25€</p>
+                        <div class="menu__prix-bouton">
+                            <div class="back--check">
+                                <label for="AssaisonneY"
+                                    class="border--check">
+                                    <i class="fa-solid fa-check fa-1x"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__recette"
+                    id="menu__recette-2">
+                    <input class="recette__validation"
+                        type="radio"
+                        id="boucheH"
+                        name="entrees" />
+                    <div class="recette__description">
+                        <h3>Bouchée de homard croustillant</h3>
+                        <p class="description__detail">Et sa farandole de petits légumes</p>
+                    </div>
+                    <p class="prix-bouton__prix">35€</p>
+                    <div class="menu__prix-bouton">
+                        <div class="back--check">
+                            <label for="boucheH"
+                                class="border--check">
+                                <i class="fa-solid fa-check fa-1x"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__recette"
+                id="menu__recette-3">
+                <input class="recette__validation"
+                    type="radio"
+                    id="velouteC"
+                    name="entrees" />
+                <div class="recette__description">
+                    <h3>Velouté de cèpes</h3>
+                    <p class="description__detail">Aux truffes</p>
+                </div>
+                <p class="prix-bouton__prix">20€</p>
+                <div class="menu__prix-bouton">
+                    <div class="back--check">
+                        <label for="velouteC"
+                            class="border--check">
+                            <i class="fa-solid fa-check fa-1x"></i></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <h2 class="menu__titre">Plats</h2>
+            <div class="menu__recette"
+                id="menu__recette-4">
+                <input class="recette__validation"
+                    type="radio"
+                    id="pouletR"
+                    name="plats" />
+                <div class="recette__description">
+                    <h3>Poulet rôti aux herbes de Provence
                     </h3>
-                    <p class="recette__description">Et sa crème de truffe</p>
-                    <p class="recette__prix">40€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Langouste rôtie</h3>
-                    <p class="recette__description">Et ses légumes de saison</p>
-                    <p class="recette__prix">35€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Côte de boeuf Angus</h3>
-                    <p class="recette__description">Et sa purée de panais</p>
-                    <p class="recette__prix">44€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-            </section>
+                    <p class="description__detail">Et sa crème de truffe</p>
+                </div>
+                <p class="prix-bouton__prix">40€</p>
+                <div class="menu__prix-bouton">
+                    <div class="back--check">
+                        <label for="pouletR"
+                            class="border--check">
+                            <i class="fa-solid fa-check fa-1x"></i></label>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__recette"
+            id="menu__recette-5">
+            <input class="recette__validation"
+                type="radio"
+                id="langousteR"
+                name="plats" />
+            <div class="recette__description">
+                <h3>Langouste rôtie</h3>
+                <p class="description__detail">Et ses légumes de saison</p>
+            </div>
+            <p class="prix-bouton__prix">35€</p>
+            <div class="menu__prix-bouton">
+                <div class="back--check">
+                    <label for="langousteR"
+                        class="border--check">
+                        <i class="fa-solid fa-check fa-1x"></i></label>
+                </div>
+            </div>
+        </div>
+        <div class="menu__recette"
+        id="menu__recette-6">
+        <input class="recette__validation"
+            type="radio"
+            id="coteB"
+            name="plats" />
+        <div class="recette__description">
+            <h3>Côte de boeuf Angus</h3>
+            <p class="description__detail">Et sa purée de panais</p>
+        </div>
+        <p class="prix-bouton__prix">44€</p>
+        <div class="menu__prix-bouton">
+            <div class="back--check">
+                <label for="coteB"
+                    class="border--check">
+                    <i class="fa-solid fa-check fa-1x"></i></label>
+            </div>
+        </div>
+    </div>
+</section>
             <section class="menu">
                 <h2 class="menu__titre">Desserts</h2>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Farandole de desserts</h3>
-                    <p class="recette__description">Du chef</p>
-                    <p class="recette__prix">18€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Crème brulée</h3>
-                    <p class="recette__description">Revisitée</p>
-                    <p class="recette__prix">22€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
-                <article class="menu__recette">
-                    <h3 class="recette__titre">Tiramisu</h3>
-                    <p class="recette__description">À la noisette</p>
-                    <p class="recette__prix">23€</p>
-                    <button class="recette__validation">
-                        <i class="fa-solid fa-check"></i>
-                    </button>
-                </article>
+                <div class="menu__recette"
+                    id="menu__recette-7">
+                    <input class="recette__validation"
+                        type="radio"
+                        id="farandoleD"
+                        name="desserts" />
+                    <div class="recette__description">
+                        <h3>Farandole de desserts</h3>
+                        <p class="description__detail">Du chef</p>
+                    </div>
+                    <p class="prix-bouton__prix">18€</p>
+                    <div class="menu__prix-bouton">
+                        <div class="back--check">
+                            <label for="farandoleD"
+                                class="border--check">
+                                <i class="fa-solid fa-check fa-1x"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__recette"
+                id="menu__recette-8">
+                <input class="recette__validation"
+                    type="radio"
+                    id="cremeB"
+                    name="desserts" />
+                <div class="recette__description">
+                    <h3>Crème brulée</h3>
+                    <p class="description__detail">Revisitée</p>
+                </div>
+                <p class="prix-bouton__prix">22€</p>
+                <div class="menu__prix-bouton">
+                    <div class="back--check">
+                        <label for="cremeB"
+                            class="border--check">
+                            <i class="fa-solid fa-check fa-1x"></i></label>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__recette"
+            id="menu__recette-9">
+            <input class="recette__validation"
+                type="radio"
+                id="tiramisu"
+                name="desserts"/>
+            <div class="recette__description">
+                <h3>Tiramisu</h3>
+                <p class="description__detail">À la noisette</p>
+            </div>
+            <p class="prix-bouton__prix">23€</p>
+            <div class="menu__prix-bouton">
+                <div class="back--check">
+                    <label for="tiramisu"
+                        class="border--check">
+                        <i class="fa-solid fa-check fa-1x"></i></label>
+                </div>
+            </div>
+        </div>
             </section>
-            <button class="menumain__validation">Commander</button>
+            <button class="form__bouton form__bouton--clair">Commander</button>
         </main>
         <footer class="omf__footer">
             <h2 class="footer__titre">ohmyfood</h2>

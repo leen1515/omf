@@ -2,6 +2,7 @@
   background-color: $grisclair;
   padding-bottom: 40px;
   margin-top: 40px;
+  margin:auto;
   height:auto;
   @include mediaXL {
     @include mixinFlex(column, center);
@@ -9,8 +10,9 @@
     white-space:normal;
   }
   @include mediaXL {
-    @include mixinFlex(row, space-around);
+    @include mixinFlex(row, space-evenly);
     flex-wrap: wrap;
+    gap:20px;
     white-space:normal;
   }
 }
