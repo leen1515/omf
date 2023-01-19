@@ -4,13 +4,13 @@
   margin-top: 40px;
   margin:auto;
   height:auto;
-  @include mediaXL {
+  @include mediaM {
     @include mixinFlex(column, center);
     flex-wrap: wrap;
     white-space:normal;
   }
   @include mediaXL {
-    @include mixinFlex(row, space-evenly);
+    @include mixinFlex(row, space-around);
     flex-wrap: wrap;
     gap:20px;
     white-space:normal;
@@ -20,16 +20,16 @@
 .restaurants__titre {
   text-align: left;
   flex: 100%;
-  padding: 50px 0;
+  padding: 20px 0;
   margin: 0 $marginLeftTitre;
   @include mediaM{
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 20px 0 0 0;
   }
   @include mediaXL{
     text-align: center;
     margin: 0;
-    padding: 10px;
+    padding: 20px 0 0 0;
   }
 }

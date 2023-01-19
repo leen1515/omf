@@ -15,9 +15,17 @@
 }
 
 .menu {
+  position:relative;
   &__image {
     width: 100%;
     z-index: 2;
+    @include mediaM{
+      height:200px; 
+    }
+    @include mediaXL{
+      top:0px; 
+      height:200px;
+  }
   }
 
   &__validation {
@@ -30,10 +38,15 @@
   align-self: center;
   margin: 0 auto;
   height: auto;
-  top: -100px;
+  top: -70px;
   border-radius: 50px 50px 0 0;
   z-index: 3;
   width: 100%;
+  @include mediaM{
+    top:0px; 
+  }
+  @include mediaXL{
+    top:0px;  }
 }
 
 .tete__logo--position {
@@ -46,6 +59,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @include mediaM{
+    position:fixed; 
+    top:-350px;
+    left:0;
+  }
+  @include mediaXL{
+    position:fixed; 
+    top:-350px;
+    left:0;
+  }
 }
 
 .entete__titre {
@@ -85,15 +108,36 @@
 .form__menu {
   background-color: $grisfonce;
   position: relative;
-  bottom: 0;
+  margin-right:auto;
+  margin-left:auto;
   margin-bottom: 0;
-  height: 100%;
+  height:auto;
+  @include mediaM {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right:auto;
+    margin-left:auto;
+    height:auto;
+  }
+  @include mediaXL {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height:auto;
+    margin-right:auto;
+    margin-left:auto;
+  }
 }
 
-@for $i from 1 through 10{
+/*boucle pour generer les ids des cartes et la gestion de leur temps d'apparition*/
+
+@for $i from 1 through $nombreDeCarte {
   #menu__recette-#{$i} {
     opacity: 0;
-    animation-delay: 4s+$i*0.25;
+    animation-delay: 0.50s + $i * 0.25;
     animation-name: menu-apparition;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -102,11 +146,11 @@
 @keyframes menu-apparition {
   from {
     opacity: 0;
-    margin-top:40px;
+    margin-top: 40px;
   }
   to {
     opacity: 1;
-    margin-top:20px;
+    margin-top: 20px;
   }
 }
 
@@ -114,7 +158,7 @@
   background-color: $grisclair;
   display: flex;
   width: 90%;
-  max-width: 600px;
+  max-width: 500px;
   height: 80px;
   margin: 20px auto;
   justify-content: center;
@@ -133,7 +177,6 @@
     font-size: 0.9rem;
   }
 }
-
 
 .recette__description {
   @include mixinFlex(column, start);
@@ -185,6 +228,7 @@
   }
 }
 
+/*gestion de l'animation des div des selections au survol de la souris*/
 .menu__recette:hover {
   .recette__description {
     width: 80%;
@@ -241,6 +285,7 @@
   transition: transform 1s;
   margin-top: -18px;
   top: 5px;
+  cursor:pointer;
 }
 
 .menu__recette input:checked ~ .recette__description {
@@ -260,4 +305,13 @@
   transform: rotate(-360deg);
   font-size: larger;
   font-weight: 700;
-}
+  }
+  
+  /*bouton commander*/
+  .parent__form__bouton{
+    width:100%;
+    height:50px;
+    position:relative;
+    bottom:0;
+    
+  }

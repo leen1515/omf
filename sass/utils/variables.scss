@@ -25,6 +25,5 @@ $marginLeftTitre: 6%;
 $breakpoints:(tablette:800px, xl:1000px);
 
 
-
-
-
+/*variable pour le nombre de carte a afficher, influe aussi sur le temps de leur apparition*/
+$nombreDeCarte:10;

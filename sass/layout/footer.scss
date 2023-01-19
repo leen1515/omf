@@ -1,8 +1,11 @@
 .omf__footer {
+  flex:1;
   width: 100%;
   background-color: $gristresfonce;
   color: $blanc;
-  bottom: 0;
+  height:auto;
+  z-index: 5;
+  bottom:0;
   
 
   .footer__titre {
