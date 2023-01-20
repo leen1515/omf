@@ -75,7 +75,7 @@
 }
 
 .entete__titre {
-  padding: 20px;
+  padding: 10px;
   min-width: 200px;
   position: relative;
   margin-right: 40px;
@@ -84,11 +84,14 @@
   font-size: 1rem;
   text-align: left;
   font-weight: 400;
+
   @include mediaM{
     font-size: 1.5rem;
+    height:100px;
   }
   @include mediaXL{
     font-size: 1.5rem;
+    height:100px;
   }
 
 }
@@ -98,6 +101,12 @@
   top: 40px;
   width:50px;
   left:-60px;
+  @include mediaM{
+    top: 20px;
+  }
+  @include mediaXL{
+    top: 20px;
+  }
 }
 
 .menu {

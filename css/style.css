@@ -792,7 +792,7 @@ input[type=text]:focus {
 }
 
 .entete__titre {
-  padding: 20px;
+  padding: 10px;
   min-width: 200px;
   position: relative;
   margin-right: 40px;
@@ -805,11 +805,13 @@ input[type=text]:focus {
 @media (min-width: 768px) and (max-width: 1000px) {
   .entete__titre {
     font-size: 1.5rem;
+    height: 100px;
   }
 }
 @media (min-width: 1000px) {
   .entete__titre {
     font-size: 1.5rem;
+    height: 100px;
   }
 }
 
@@ -818,6 +820,16 @@ input[type=text]:focus {
   top: 40px;
   width: 50px;
   left: -60px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .entete__iconelike {
+    top: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  .entete__iconelike {
+    top: 20px;
+  }
 }
 
 .menu__entete {
