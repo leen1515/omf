@@ -12,14 +12,18 @@
   padding-top: 15px;
   &::placeholder {
     text-align: center;
-    opacity: 0.7;
-    font-size: larger;
+    opacity: 0.8;
+    font-size: medium;
     color: $noir;
-    font-weight: 700;
+    font-weight: 800;
   }
 }
 input[type="text"]:focus {
+  text-align: center;
 	outline:none;
+  opacity: 0.8;
+  font-weight: 800;
+  font-size: medium;
 }
 .form {
   &__input {

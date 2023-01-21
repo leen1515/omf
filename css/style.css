@@ -109,14 +109,18 @@ a {
 }
 .input__localisation::placeholder {
   text-align: center;
-  opacity: 0.7;
-  font-size: larger;
+  opacity: 0.8;
+  font-size: medium;
   color: #000000;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 input[type=text]:focus {
+  text-align: center;
   outline: none;
+  opacity: 0.8;
+  font-weight: 800;
+  font-size: medium;
 }
 
 .form__input {
