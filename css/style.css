@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   text-align: center;
   max-width: 768px;
   box-sizing: border-box;
@@ -50,7 +50,7 @@ body {
 }
 
 h2 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
 }
@@ -156,7 +156,7 @@ input[type=text]:focus {
   color: #ffffff;
   border-radius: 20px;
   border: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
 .form__bouton--clair:hover {

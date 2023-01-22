@@ -33,6 +33,7 @@
     position: relative;
     top: -40px;
     text-align: right;
+    cursor:pointer;
     @include widthMarginHeight(70%, auto, 15%);
     @include mediaM {
       @include widthMarginHeight(80%, auto, 15%);
